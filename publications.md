@@ -12,7 +12,7 @@ permalink: /publications/
 ## 2014
 
 - Benjamin Holland, Suresh Kothari. **A Bug or Malware? Catastrophic consequences either way.** *[Derbycon 4.0](https://www.derbycon.com/schedule_2014/)*, Louisville, Kentucky, September 2014.<br/>
-**Talk:** [[Video](https://www.youtube.com/watch?v=3J4D7YJ1IE4)]&nbsp;[[Slides](./slides/A_Bug_or_Malware.pdf)]
+**Talk:** [[Video](https://www.youtube.com/watch?v=3J4D7YJ1IE4)]&nbsp;[[Slides](../slides/A_Bug_or_Malware.pdf)]
 
 - Suresh Kothari, Akshay Deepak, Ahmed Tamrawi, Benjamin Holland, Sandeep Krishnan. **A "Human-in-the-loop" Approach for Resolving Complex Software Anomalies.** *In Proceedings of the 2014 IEEE International Conference on Systems, Man, and Cybernetics [(SMC 2014)](http://smc2014.org/)*, San Diego, CA, October 2014.<br/>
 **Paper:** [[PDF](../papers/A_Human-in-the-loop_Approach_for_Resolving_Complex_Software_Anomalies.pdf)]
