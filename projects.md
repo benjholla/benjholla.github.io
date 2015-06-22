@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-This page contains information on a few hobby projects. Anything not listed here can be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
+This page contains information on a few hobby projects. Anything not listed here can probably be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
 
 ## BrewLog 
 <a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>
@@ -17,7 +17,6 @@ This page contains information on a few hobby projects. Anything not listed here
 [QuestionableCode.org](https://questionablecode.org) is project to audit every Android binary application installed on a Samsung Galaxy Tab 4 tablet.
 
 ## Cyber Defense Competition Web Apps
-
 I've developed several vulnerable web applications and challenge anomalies for use in cyber defense competitions at Iowa State University.  For more details see [https://github.com/ISEAGE-ISU](https://github.com/ISEAGE-ISU).
 
 - [https://github.com/benjholla/CompletelyDigitalClips](https://github.com/benjholla/CompletelyDigitalClips)
