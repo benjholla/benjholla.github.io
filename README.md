@@ -1,3 +1,3 @@
 # Ben Holland Portfolio
 
-See [https://benjholla.github.io/](https://benjholla.github.io/)
+See [https://ben-holland.com](https://ben-holland.com)
