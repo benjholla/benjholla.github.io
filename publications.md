@@ -6,7 +6,7 @@ permalink: /publications/
 
 ## 2015
 
-- Benjamin Holland. **There’s a hole in my bucket, dear Liza — Examining side channel leaks in web apps.** *(OWASP Ames)[https://owaspames.org/2015/08/07/augusts-meeting-theres-a-hole-in-my-bucket-dear-liza-examining-side-channel-leaks-in-web-apps/]*, Ames, IA, August 2015.<br/>
+- Benjamin Holland. **There’s a hole in my bucket, dear Liza — Examining side channel leaks in web apps.** *[OWASP Ames](https://owaspames.org/2015/08/07/augusts-meeting-theres-a-hole-in-my-bucket-dear-liza-examining-side-channel-leaks-in-web-apps/)*, Ames, IA, August 2015.<br/>
 **Talk:** [[Slides](../slides/Examining_side_channel_leaks_in_web_apps.pdf)]
 
 - Benjamin Holland, Tom Deering, Suresh Kothari, Jon Mathews, Nikhil Ranade. **Security Toolbox for Detecting Novel and Sophisticated Android Malware.** *In Proceedings of the 37th International Conference on Software Engineering [(ICSE 2015)](http://2015.icse-conferences.org/)*, Firenze, Italy, May 2015.<br/>
