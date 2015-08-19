@@ -18,6 +18,7 @@
     <script type="text/javascript">if(window.location.protocol != "https:") { window.location.href = "https:" + window.location.href.substring(window.location.protocol.length); }</script>
 
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+
     <script type="text/javascript">
        $(document).ready(function() {
             // Tooltip only Text
@@ -40,6 +41,15 @@
                     .css({ top: mousey, left: mousex })
             });
     });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() { 
+            $(".toggle-abstract").click(function() {
+                $(this).next(".abstract").toggle();
+                return false;   
+            });
+        });
     </script>
   </head>
 
