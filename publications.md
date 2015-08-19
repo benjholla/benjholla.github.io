@@ -5,7 +5,7 @@ permalink: /publications/
 ---
 
 ## Upcoming
-- <a name="Derbycon2015" style="display:none;">Benjamin Holland, Amber Aldrich. **Homebrewing for Hackers.** *[Derbycon 5.0](https://www.derbycon.com/derbycon-2015-schedule-and-abstract/)*, Louisville, Kentucky, September 2015.</a><br/>
+- Benjamin Holland, Amber Aldrich. **Homebrewing for Hackers.** *[Derbycon 5.0](https://www.derbycon.com/derbycon-2015-schedule-and-abstract/)*, Louisville, Kentucky, September 2015.<br/>
 **Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
 <p class="abstract">It has been a few years now since <a href="https://www.youtube.com/watch?v=FoUWHfh733Y">int eighty told us to drink all the booze and hack all the things</a>.  Well there are plenty of things left to hack, but the cost of booze is really adding up.  Come learn how you can cheaply and easily brew your own booze from the many varieties of beer to a Viking mead.  We will even touch a little on the legal and historical side of homebrewing.  Did you know it's legal to brew your own in all 50 states as long as you don't sell it? Well you will when we give FREE BEER* to a few lucky attendees because we can't legally sell it to you! That's right FREE as in BEER. Finally we are open sourcing a markdown based homebrew log built on the Git version control system so you can publicly record your beer measurements and automatically calculate the alcohol content! *Some molecular assembly required. Must be 21 years of age. Not enough beer for everyone.</p>
 
