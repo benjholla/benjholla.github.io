@@ -16,6 +16,30 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   
     <script>if(window.location.protocol != "https:") { window.location.href = "https:" + window.location.href.substring(window.location.protocol.length); }</script>
+
+    <script type="text/javascript">
+       $(document).ready(function() {
+            // Tooltip only Text
+            $('.hover-tooltip').hover(function(){
+                    // Hover over code
+                    var tip = $(this).attr('tip');
+                    $(this).data('tipText', tip).removeAttr('tip');
+                    $('<p class="tooltip"></p>')
+                    .text(tip)
+                    .appendTo('body')
+                    .fadeIn('slow');
+            }, function() {
+                    // Hover out code
+                    $(this).attr('tip', $(this).data('tipText'));
+                    $('.tooltip').remove();
+            }).mousemove(function(e) {
+                    var mousex = e.pageX + 20; //Get X coordinates
+                    var mousey = e.pageY + 10; //Get Y coordinates
+                    $('.tooltip')
+                    .css({ top: mousey, left: mousex })
+            });
+    });
+    </script>
   </head>
 
   <body>
