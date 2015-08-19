@@ -46,7 +46,7 @@
     <script type="text/javascript">
         $(document).ready(function() { 
             $(".toggle-abstract").click(function() {
-                $(this).next(".abstract").toggle();
+                 $(this).closest('li').find(".abstract").toggle();
                 return false;   
             });
         });
