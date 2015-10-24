@@ -9,7 +9,7 @@ This page contains information on a few hobby projects. Anything not listed here
 ## JReFrameworker
 <a href="http://ben-holland.com/JReFrameworker/"><img src="https://ben-holland.com/JReFrameworker/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
 
-[JReFrameworker](http://ben-holland.com/JReFrameworker/) is an Eclipse plugin for creating and building projects that allow the user to write annotated Java source that is automatically merged or inserted into the runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
+[JReFrameworker](http://ben-holland.com/JReFrameworker/) is an Eclipse plugin for creating projects that allow the user to write annotated Java source that is automatically merged or inserted into the Java runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime environment. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
 
 ## BrewLog 
 <a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>
