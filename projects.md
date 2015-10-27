@@ -11,6 +11,16 @@ This page contains information on a few hobby projects. Anything not listed here
 
 [JReFrameworker](https://ben-holland.com/JReFrameworker/) is an Eclipse plugin for creating projects that allow the user to write annotated Java source that is automatically merged or inserted into the Java runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime environment. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
 
+## Atlas Plugins
+<img src="https://ben-holland.com/AtlasWBP/images/toolbox.png" alt="JReFrameworker" width="55" height="55" />
+
+I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a program analysis framework).
+
+- [AtlasWBP](https://ben-holland.com/AtlasWBP/) - An Atlas frontend for processing Java WAR binaries.
+- [Toolbox Commons](https://ensoftcorp.github.io/toolbox-commons/) - A set of common utilities for program analysis using Atlas.
+- [Starter Toolbox](https://github.com/EnSoftCorp/Starter-Toolbox) - A barebone starter toolbox for building a domain specific toolbox on top of Atlas. This plugin supports a headless bulk analysis mode.
+- [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
+
 ## BrewLog 
 <a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>
 
