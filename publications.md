@@ -4,6 +4,8 @@ title: Publications
 permalink: /publications/
 ---
 
+This page contains selected talks, papers, and other publications.
+
 <a name="upcoming"></a>
 ## Upcoming
 
