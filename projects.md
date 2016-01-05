@@ -22,7 +22,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 - [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
 
 ## BrewLog&nbsp;/&nbsp;SoapLog
-<a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>&nbsp;&nbsp;<a href="https://ben-holland.com/SoapLog/"><img src="https://raw.githubusercontent.com/benjholla/SoapLog/master/images/logo.png" alt="Ben's Soap Log" width="55" height="55" /></a>
+<a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>&nbsp;&nbsp;<a href="https://ben-holland.com/SoapLog/"><img src="https://raw.githubusercontent.com/benjholla/SoapLog/master/images/logo.png" alt="Ben's Soap Log" width="60" height="60" /></a>
 
 [BrewLog](https://github.com/benjholla/BrewLog) is a public homebrew log with version control!  I built BrewLog as an extension to the [Jekyll-now](https://github.com/barryclark/jekyll-now) theme to track my homebrew beer and wine measurements as well as tasting notes, but it's ready to be forked and deployed free on Github by anyone. [SoapLog](https://github.com/benjholla/SoapLog) extends BrewLog for a public soaping log with an integrated lye calculator and version control.
 
