@@ -6,7 +6,7 @@ layout: default
       {% for entry in site.posts %}
         {% unless entry.draft %}
            {% assign post = entry %}
-           {% assign content = post.content %}
+           {% assign excerpt = post.excerpt %}
            {% include post_detail.html %}
            {% break %}
         {% endunless %}
