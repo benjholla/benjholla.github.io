@@ -10,10 +10,7 @@ I'm sure this will be an evolving post as I develop these thoughts more, but aft
 - Points-to Analysis
 - Separate Compilation Assumptions
 - Open vs. Closed World Assumptions
-
-	and
-
-- Program Comprehension
+- Program Comprehension*
 
 I'll pick on these one at a time to explain my thinking.
 
