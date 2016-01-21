@@ -237,10 +237,7 @@ nav {
   }
 }
 
-//
-// .main
-//
-
+// posts
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -252,15 +249,6 @@ nav {
 }
 
 .post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
   .comments {
     margin-top: 10px;
   }
@@ -271,6 +259,67 @@ nav {
   }
 }
 
+// code snippets
+// code styling
+blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+}
+
+pre {
+  code {
+    border: none;
+  }
+}
+
+code {
+  border: 1px solid #ddd;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: $lightGray;
+}
+
+// tables
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb
+}
+
+table td, table th {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: .5em 1em;
+}
+
+table td:first-child, table th:first-child {
+  border-left-width: 0;
+}
+
+table thead {
+  background-color: #e0e0e0;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+table td {
+  background-color: transparent;
+}
+
+tbody tr:nth-child(odd) {
+ background-color: #f2f2f2;
+}
+
+// footer
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
@@ -283,11 +332,11 @@ footer {
   text-align: center;
 }
 
+// hover over tooltip
 .hover-tooltip {
   color:#4183C4;
 }
 
-// hover over tooltip styling
 .tooltip {
   display:none;
   position:absolute;
@@ -299,6 +348,7 @@ footer {
   font-size:12px Arial;
 }
 
+// publication abstracts
 .abstract { display:none; }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
