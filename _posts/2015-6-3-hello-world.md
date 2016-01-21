@@ -14,4 +14,4 @@ I figure I will use this space to post thoughts that might be useful to others (
 
 With respect to this site, I'd also add: 
 
-> Don't be afraid of change, it's all in the [commit history](https://github.com/benjholla/benjholla.github.io/commits/master). ~Me
+> Don't be afraid of change, you can always revert to something older in the [commit history](https://github.com/benjholla/benjholla.github.io/commits/master). ~Me
