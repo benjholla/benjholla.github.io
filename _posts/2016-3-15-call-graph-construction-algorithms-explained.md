@@ -41,6 +41,6 @@ Now remember that every object in Java can be drawn in a tree hierarchy with `ja
 	
 	o.toString();
 
-The instance method `toString` is declared in `java.lang.Object` so it can be called on any object type. Since we don't know the type of the object in variable `o` we have to assume that `java.lang.Object`'s `toString` method or any object that overrides `toString` could be called at runtime! Since Java highly encourages developers to override the `toString` method this leaves us with quite a few possiblities (an only one correct answer).
+The instance method `toString` is declared in `java.lang.Object` so it can be called on any object type. Since we don't know the type of the object in variable `o` we have to assume that `java.lang.Object`'s `toString` method or any object that overrides `toString` could be called at runtime! Since Java highly encourages developers to override the `toString` method this leaves us with quite a few possiblities (and only one correct answer).
 
 ### Whole vs. Partial Program Analysis
