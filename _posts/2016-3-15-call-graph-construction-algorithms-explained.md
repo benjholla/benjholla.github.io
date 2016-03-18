@@ -63,14 +63,18 @@ Let's start by building a sound call graph (we'll worry about precision later). 
 Class Hierarchy Analysis gives us a sound and cheap call graph.  In fact it is the default call graph implementation for most static analysis tools (including Atlas), but can we do better? Remember that a dynamic dispatch has to be called on an instance of an object, which means that in order for a dispatch to be made to a particular type's instance method at least one object of that type must have been allocated somewhere in the program. This is the core idea behind Rapid Type Analysis (RTA).	Object o1 = new A(); // new allocation of type A!	Object o2 = new B(); // new allocation of type B!	Object o3;		// ... a bunch of stuff happens		// If only A and B types were allocated, then its a good	// guess that that o3 is either an A or B type too	o3.toString();Given a CHA call graph we start at the main method and iteratively construct a new call graph that is a subset of the CHA call graph by adding only the edges to the methods that are contained in types of objects that were allocated in the main method. The methods that are reachable through the newly added edges are added to a worklist and the process is repeated until the worklist is empty.Methods can be inherited from parent types so we should consider the supertypes of the allocated types as well. RTA considers that a type could be allocated in method and then passed as a parameter to another method, RTA must also consider the parents (and their parents) of a called method. Since the resolved calling relationships are being built on-the-fly it's important to note that RTA may evaluate a method several times (if new callers are discovered the method has to be re-evaluated). RTA runs until the worklist is empty, at which point it has reached a fixed point and cannot resolve any new call edges to add to the call graph.
 
 	RAPID TYPE ANALYSIS
-	- RTA = call graph of only methods (no edges)
-	- CHA = class hierarchy analysis call graph
-	- W = worklist containing the main method	while W is not empty		M = next method in W
+	RTA = call graph of only methods (no edges)
+	CHA = class hierarchy analysis call graph
+	W = worklist containing the main method	while W is not empty		M = next method in W
         T = set of allocated types in M 
         T = T union allocated types in RTA callers of M
         for each callsite (C) in M		    if C is a static dispatch		    	add an edge to the statically resolved method		    otherwise,		    	M' = methods called from M in CHA
 				M' = M' intersection methods declared in T or supertypes of T				add an edge from the method M to each method in M'
 				add each method in M' to W
+
+The result of RTA on our first example is shown below.
+
+![Rapid Type Analysis](/images/posts/call-graph-construction-algorithms-explained/RTA.png)
 
 RTA produces a more precise call graph than CHA (because it is a subset of CHA and removes edges that are likely not feasible at runtime), but the result is no longer sound.  Let's consider a few cases where RTA might not produce a sound call graph.
 
