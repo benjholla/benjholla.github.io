@@ -62,20 +62,22 @@ We say a call graph is "sound" if it has all the edges that are possible at runt
 Partial program analysis occurs when we don't have the entire program or when we can't scale up our analysis to run over the entire program.  You might think your Hello World program is small, but don't forget you are running it on top of a vast set of libraries provided with the Java Runtime Environment. If you're really crazy you might also consider the native implementation of the virtual machine itself or the operating system that virtual machine is running on and so on and so on!In practice sometimes we just want to analyze a specific library in which case we have to do partial program analysis. Consider our example from before.  What would happen if we removed the `main` method and just consider the classes `A`, `B`, and `C`? Since the `main` method is the only place any types are actually created, it would look like the three `print` instance methods are just dead code, but don't forget that this "library" could be used by *any* Java program! Since we could conceive of Java programs that create types that could be used to invoke all three `print` methods we can't consider any of them dead code. So with that in mind it is going to be important to specify whether or not we are analyzing a partial program or a whole program when we construct our call graphs.
 
 ## Idea 1 - Class Hierarchy Analysis (CHA)
-Let's start by building a sound call graph (we'll worry about precision later). The first algorithm you might think to implement would probably be a variation of Reachability Analysis (RA). The basic idea is that for each method, we visit each callsite and then get the name of the method the callsite is referencing. We then add an edge from the method containing the callsite to every method with the same name as the callsite.	REACHABILITY ANALYSIS	for each method (M)		for each callsite (C) in M		    if C is a static dispatch		    	add an edge to the statically resolved method		    otherwise,		    	M' = methods with the same name as the callsite C				create edge M -> M'			The result is a completely sound call graph, but not a very precise call graph. We might even match callsites of `print(Object o)` to method that take a different number of parameters such as `print(Object o1, Object o2)`.  We could make our matching implementation stronger by matching the entire method signature (method name, method parameter counts/types, return type), but we still are going to have plenty of bad matches.  Consider the following code snippet with respect to our first example.	B b = new B();	// ...	b.print(b); // dispatch goes to B's print or a child of B that overrides B's print	A simple reachability analysis would add edges from the `print` callsite to `A`, `B`, and `C`'s `print` methods, but we declared `b` as a `B` type so we know the dispatch has to *at least* go to `B`'s `print` method.  We don't know what happened in the `...`, so its possible that an instance of a `C` type could have been assigned to `b`.	B b = new B();	b = new C(); // dispatch now goes to C's print	b.print(b);At this point it should be becoming clear that we could improve upon RA by considering the type hierarchy.  Class Hierarchy Analysis (CHA) was first proposed in a [1995 paper by Dean, Grove, and Chambers](http://web.cs.ucla.edu/~palsberg/tba/papers/dean-grove-chambers-ecoop95.pdf) to do just this. Class Hierarchy Analysis looks at the declared type of the variable (the receiver object) used to invoke the dynamic dispatch and restricts call edges to the inherited method implementation or the methods declared in the subtype hierarchy of the declared type of the receiver object. The result is a vast improvement on RA that is still sound and cheap to compute.I've implemented both RA and CHA call graph construction algorithms in my [call-graph-toolbox](https://ensoftcorp.github.io/call-graph-toolbox). The results for our first example are shown below. Note that RA picks up an extra `print` method signature in `java.io.PrintStream`.![Reachability Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/RA.png)![Class Hierarchy Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/CHA.png)Now let's take a look at how CHA would do when analyzing a library. For the most part, it does pretty well! A class hierarchy analysis doesn't care about where the types are instantiated, since it only uses the declared type of the receiver object. The only tricky part is that an application could declare a type that overrides an instance method in the library, in which case the dynamic dispatch could actually dispatch to a method outside of the library (an application callback). So how can we create a call edge for a method that doesn't exist yet!? Well all we have to work with is the fact that whatever method is going to override our library method has to be in a subtype of the library's type that declared the method being overridden. Consider the case where a library defines a single interface with a method `sort`. The library contains no subtypes of `Data` that implement the `sort` method. Somewhere else in the library a call to the `sort` method is made. At runtime a subtype of `Data` will exist with a `sort` method, but not when the library was compiled. The best place I've seen this defined is as the [*Separate Compilation Assumption* by Karim Ali](http://karimali.ca/resources/pubs/thesis/Ali14.pdf).	public abstract class Data {			public abstract void sort();			public static void sortIt(Data data) {			data.sort();		}	}	There is no concrete method implementation for `sort` in our library, so adding a call edge from `sortIt` to `sort` might be a bit misleading (because `Data`'s `sort` method can't actually be a runtime dispatch target). Instead what we could do is modify CHA to add a "library-call" edge to `sort` to indicate that any dynamic dispatch that gets resolved at runtime must override `sort`.  Running the *call-graph-toolbox* algorithm for CHA in library mode (available in the Eclipse preference menu) for this example shows an example of a "library-call" edge. Aside from abstract methods without any concrete method implementations, remember that any non-final method in any non-final class could be overridden by an application to form a callback.![Library Class Hierarchy Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/LibraryCHA.png)
+Let's start by building a sound call graph (we'll worry about precision later). The first algorithm you might think to implement would probably be a variation of Reachability Analysis (RA). The basic idea is that for each method, we visit each callsite and then get the name of the method the callsite is referencing. We then add an edge from the method containing the callsite to every method with the same name as the callsite.	REACHABILITY ANALYSIS	for each method (M)	   for each callsite (C) in M	       if C is a static dispatch	          add an edge to the statically resolved method	       otherwise,	          M' = methods with the same name as the callsite C	          create edge M -> M'         The result is a completely sound call graph, but not a very precise call graph. We might even match callsites of `print(Object o)` to method that take a different number of parameters such as `print(Object o1, Object o2)`.  We could make our matching implementation stronger by matching the entire method signature (method name, method parameter counts/types, return type), but we still are going to have plenty of bad matches.  Consider the following code snippet with respect to our first example.	B b = new B();		// ...some stuff happens
+		// dispatch goes to B's print or a child 	// of B that overrides B's print	b.print(b);   A simple reachability analysis would add edges from the `print` callsite to `A`, `B`, and `C`'s `print` methods, but we declared `b` as a `B` type so we know the dispatch has to *at least* go to `B`'s `print` method.  We don't know what happened in the `...`, so its possible that an instance of a `C` type could have been assigned to `b`.	B b = new B();	b = new C(); // dispatch now goes to C's print	b.print(b);At this point it should be becoming clear that we could improve upon RA by considering the type hierarchy.  Class Hierarchy Analysis (CHA) was first proposed in a [1995 paper by Dean, Grove, and Chambers](http://web.cs.ucla.edu/~palsberg/tba/papers/dean-grove-chambers-ecoop95.pdf) to do just this. Class Hierarchy Analysis looks at the declared type of the variable (the receiver object) used to invoke the dynamic dispatch and restricts call edges to the inherited method implementation or the methods declared in the subtype hierarchy of the declared type of the receiver object. The result is a vast improvement on RA that is still sound and cheap to compute.I've implemented both RA and CHA call graph construction algorithms in my [call-graph-toolbox](https://ensoftcorp.github.io/call-graph-toolbox). The results for our first example are shown below. Note that RA picks up an extra `print` method signature in `java.io.PrintStream`.![Reachability Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/RA.png)![Class Hierarchy Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/CHA.png)Now let's take a look at how CHA would do when analyzing a library. For the most part, it does pretty well! A class hierarchy analysis doesn't care about where the types are instantiated, since it only uses the declared type of the receiver object. The only tricky part is that an application could declare a type that overrides an instance method in the library, in which case the dynamic dispatch could actually dispatch to a method outside of the library (an application callback). So how can we create a call edge for a method that doesn't exist yet!? Well all we have to work with is the fact that whatever method is going to override our library method has to be in a subtype of the library's type that declared the method being overridden. Consider the case where a library defines a single interface with a method `sort`. The library contains no subtypes of `Data` that implement the `sort` method. Somewhere else in the library a call to the `sort` method is made. At runtime a subtype of `Data` will exist with a `sort` method, but not when the library was compiled. The best place I've seen this defined is as the [*Separate Compilation Assumption* by Karim Ali](http://karimali.ca/resources/pubs/thesis/Ali14.pdf).	public abstract class Data {		   public abstract void sort();
+		   public static void sortIt(Data data) {	      data.sort();	   }	}   There is no concrete method implementation for `sort` in our library, so adding a call edge from `sortIt` to `sort` might be a bit misleading (because `Data`'s `sort` method can't actually be a runtime dispatch target). Instead what we could do is modify CHA to add a "library-call" edge to `sort` to indicate that any dynamic dispatch that gets resolved at runtime must override `sort`.  Running the *call-graph-toolbox* algorithm for CHA in library mode (available in the Eclipse preference menu) for this example shows an example of a "library-call" edge. Aside from abstract methods without any concrete method implementations, remember that any non-final method in any non-final class could be overridden by an application to form a callback.![Library Class Hierarchy Analysis Call Graph](/images/posts/call-graph-construction-algorithms-explained/LibraryCHA.png)
 
 ## Idea 2 - Rapid Type Analysis (RTA)
-Class Hierarchy Analysis gives us a sound and cheap call graph.  In fact it is the default call graph implementation for most static analysis tools (including Atlas), but can we do better? Remember that a dynamic dispatch has to be called on an instance of an object, which means that in order for a dispatch to be made to a particular type's instance method at least one object of that type (or subtype) must have been allocated somewhere in the program. This is the core idea behind Rapid Type Analysis (RTA), which was proposed by [Bacon and Sweeney](http://researcher.watson.ibm.com/researcher/files/us-bacon/Bacon96Fast.pdf) (implementation details available in the [extended technical report](http://digitalassets.lib.berkeley.edu/techreports/ucb/text/CSD-98-1017.pdf)).	Object o1 = new A(); // new allocation of type A!	Object o2 = new B(); // new allocation of type B!	Object o3;		// ... a bunch of stuff happens		// If only A and B types were allocated, then its a good	// guess that that o3 is either an A or B type too	o3.toString();Given a CHA call graph we start at the main method and iteratively construct a new call graph that is a subset of the CHA call graph by adding only the edges to the methods that are contained in types of objects that were allocated in the main method. The methods that are reachable through the newly added edges are added to a worklist and the process is repeated until the worklist is empty.Methods can be inherited from parent types so we should consider the supertypes of the allocated types as well. RTA considers that a type could be allocated in method and then passed as a parameter to another method, RTA must also consider the parents (and their parents) of a called method. Since the resolved calling relationships are being built on-the-fly it's important to note that RTA may evaluate a method several times (if new callers are discovered the method has to be re-evaluated). RTA runs until the worklist is empty, at which point it has reached a fixed point and cannot resolve any new call edges to add to the call graph.
+Class Hierarchy Analysis gives us a sound and cheap call graph.  In fact it is the default call graph implementation for most static analysis tools (including Atlas), but can we do better? Remember that a dynamic dispatch has to be called on an instance of an object, which means that in order for a dispatch to be made to a particular type's instance method at least one object of that type (or subtype) must have been allocated somewhere in the program. This is the core idea behind Rapid Type Analysis (RTA), which was proposed by [Bacon and Sweeney](http://researcher.watson.ibm.com/researcher/files/us-bacon/Bacon96Fast.pdf) (implementation details available in the [extended technical report](http://digitalassets.lib.berkeley.edu/techreports/ucb/text/CSD-98-1017.pdf)).	Object o1 = new A(); // new allocation of type A!	Object o2 = new B(); // new allocation of type B!	Object o3;	   	// ... some stuff happens	   	// If only A and B types were allocated, then its a good	// guess that that o3 is either an A or B type too	o3.toString();Given a CHA call graph we start at the main method and iteratively construct a new call graph that is a subset of the CHA call graph by adding only the edges to the methods that are contained in types of objects that were allocated in the main method. The methods that are reachable through the newly added edges are added to a worklist and the process is repeated until the worklist is empty.Methods can be inherited from parent types so we should consider the supertypes of the allocated types as well. RTA considers that a type could be allocated in method and then passed as a parameter to another method, RTA must also consider the parents (and their parents) of a called method. Since the resolved calling relationships are being built on-the-fly it's important to note that RTA may evaluate a method several times (if new callers are discovered the method has to be re-evaluated). RTA runs until the worklist is empty, at which point it has reached a fixed point and cannot resolve any new call edges to add to the call graph.
 
 	RAPID TYPE ANALYSIS
 	RTA = call graph of only methods (no edges)
 	CHA = class hierarchy analysis call graph
-	W = worklist containing the main method	while W is not empty		M = next method in W
-        T = set of allocated types in M 
-        T = T union allocated types in RTA callers of M
-        for each callsite (C) in M		    if C is a static dispatch		    	add an edge to the statically resolved method		    otherwise,		    	M' = methods called from M in CHA
-				M' = M' intersection methods declared in T or supertypes of T				add an edge from the method M to each method in M'
-				add each method in M' to W
+	W = worklist containing the main method	while W is not empty	   M = next method in W
+	     T = set of allocated types in M 
+	     T = T union allocated types in RTA callers of M
+	     for each callsite (C) in M	       if C is a static dispatch	          add an edge to the statically resolved method	       otherwise,	          M' = methods called from M in CHA
+	          M' = M' intersection methods declared in T or supertypes of T	          add an edge from the method M to each method in M'
+	          add each method in M' to W
 
 The result of RTA on our first example is shown below.
 
@@ -84,36 +86,36 @@ The result of RTA on our first example is shown below.
 RTA produces a more precise call graph than CHA (because it is a subset of CHA and removes edges that are likely not feasible at runtime), but the result is no longer sound.  Let's consider a few cases where RTA might not produce a sound call graph.
 
 	public static Object v;
-
+	
 	public static void main(String[] args){
-		foo();
-		bar();
-	}
-
-	public static void foo(){
-		Object o = new A();
-		v = o;
+	   foo();
+	   bar();
 	}
 	
+	public static void foo(){
+	   Object o = new A();
+	   v = o;
+	}
+	   
 	public static void bar(){
-		v.toString()
+	   v.toString()
 	}
 
 In the example above `main` calls `foo`, which allocates a new `A` type and stores the instance to a field `v`. Then `main` calls `bar`, which accesses from the field and calls `toString` on `v`. RTA will not include an edge from `bar` to `toString` because neither `bar` or its parents (`main`) allocated any instance that `toString` could be called on (however some implementations might consider the `String[] args` to be a special implicit allocation of an array type of String types, but the type `A` still does not reach `bar` in the basic RTA implementation).Let's consider another example of unsoundness.
 
 	public static void main(String[] args){
-		Object o = foo();
-		bar(o);
+	   Object o = foo();
+       bar(o);
 	}
-
+	
 	public static Object foo(){
-		return new A();
+	   return new A();
 	}
-	
+   
 	public static void bar(Object o){
-		o.toString()
+	   o.toString()
 	}
-	
+   
 In this example `main` calls `foo`, which returns an allocation of type `A` that is then passed as a parameter in the call to `bar`. Again in this case the `toString` edge to `A`'s `toString` method would be missing because neither `bar` or its parents (`main`) allocated a type of `A`.
 
 As you may have guessed we could modify RTA to consider fields and the types of method parameters and method return types to improve the accuracy of RTA, which is exactly what [Tip and Palsberg](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf) proposed to do in the paper that inspired this post. In their paper, Tip and Palsberg propose to add several more constraints to RTA.
@@ -132,24 +134,24 @@ Since exception handling is extremely common in Java code, I propose another RTA
 
 	public class Exceptions {
 	
-		public static void main(String[] args) {
-			try {
-				foo();
-			} catch (Exception e){
-				e.toString();
-			}
-		}
-		
-		public static void foo() {
-			throw new MyException();
-		}
-		
-		public static class MyException extends RuntimeException {
-			@Override
-			public String toString(){
-				return "MyException";
-			}
-		}
+	   public static void main(String[] args) {
+	      try {
+	         foo();
+	      } catch (Exception e){
+	         e.toString();
+	      }
+	   }
+	   
+	   public static void foo() {
+	      throw new MyException();
+	   }
+	   
+	   public static class MyException extends RuntimeException {
+	      @Override
+	      public String toString(){
+	         return "MyException";
+	      }
+	   }
 	}
 
 Note that none of the RTA variants proposed by Tip and Palsberg specifically address this case and would fail to add the edge to `MyException`'s `toString` method.
