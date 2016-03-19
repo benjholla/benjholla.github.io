@@ -130,7 +130,31 @@ The idea of adding constraints to RTA to improve the accuracy and soundness of t
 
 Since exception handling is extremely common in Java code, I propose another RTA variation, Exception Type Analysis (ETA), which adds the following constraint. Add the allocated and inherited types of any method with a throw site to every method that contains a reachable type compatible catch block in the current reverse call graph of throwing method. Of course this contraint could be added to XTA. The result of ETA for the following code snippet is shown below.
 
-TODO: Code Snippet and ETA Screenshot
+	public class Exceptions {
+	
+		public static void main(String[] args) {
+			try {
+				foo();
+			} catch (Exception e){
+				e.toString();
+			}
+		}
+		
+		public static void foo() {
+			throw new MyException();
+		}
+		
+		public static class MyException extends RuntimeException {
+			@Override
+			public String toString(){
+				return "MyException";
+			}
+		}
+	}
+
+Note that none of the RTA variants proposed by Tip and Palsberg specifically address this case and would fail to add the edge to `MyException`'s `toString` method.
+
+![ETA](/images/posts/call-graph-construction-algorithms-explained/ETA.png)
 
 Now let's play out the idea of adding constraints a bit further. Consider how RTA would address the following snippet of code.
 
