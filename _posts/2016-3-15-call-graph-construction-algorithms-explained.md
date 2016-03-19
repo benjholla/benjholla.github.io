@@ -105,13 +105,13 @@ In the example above `main` calls `foo`, which allocates a new `A` type and stor
 
 	public static void main(String[] args){
 	   Object o = foo();
-       bar(o);
+	   bar(o);
 	}
 	
 	public static Object foo(){
 	   return new A();
 	}
-   
+	
 	public static void bar(Object o){
 	   o.toString()
 	}
