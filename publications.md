@@ -6,7 +6,6 @@ permalink: /publications/
 
 This page contains selected talks, papers, and other publications.
 
-<a name="2015"></a>
 ## 2015
 
 - <a name="ASE2015"></a>Suresh Kothari, Benjamin Holland. **Computer-aided Collaborative Validation of Large Software.** *The 30th IEEE/ACM International Conference on Automated Software Engineering ([ASE 2015](http://ase2015.unl.edu/#computer-aided-collaborative-validation-tutorial))*, Lincoln, Nebraska, November 2015.<br/>
