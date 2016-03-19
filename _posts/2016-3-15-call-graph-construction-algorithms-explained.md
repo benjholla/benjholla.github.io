@@ -115,7 +115,7 @@ In the example above `main` calls `foo`, which allocates a new `A` type and stor
 	
 In this example `main` calls `foo`, which returns an allocation of type `A` that is then passed as a parameter in the call to `bar`. Again in this case the `toString` edge to `A`'s `toString` method would be missing because neither `bar` or its parents (`main`) allocated a type of `A`.
 
-As you may have guessed we could modify RTA to consider fields and method return/parameter types to improve the accuracy of RTA, which is exactly what [Tip and Palsberg](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf) proposed to do in the paper that inspired this post. In their paper, Tip and Palsberg propose to add several more constraints to RTA.
+As you may have guessed we could modify RTA to consider fields and the types of method parameters and method return types to improve the accuracy of RTA, which is exactly what [Tip and Palsberg](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf) proposed to do in the paper that inspired this post. In their paper, Tip and Palsberg propose to add several more constraints to RTA.
 
 The first set of constraints concerns global variables and forms the basis for the first variation of RTA, Field Type Analysis (FTA). FTA adds the constraint that any method that reads from a field can inherit the allocated types of any method's allocated or inherited allocation types.
 
@@ -124,7 +124,20 @@ The second variation of RTA, Method Type Analysis (MTA), adds constraints involv
 Finally, we can combine both sets of constraints defined by MTA and FTA to form a Hybrid Type Analysis (XTA). The result of XTA on our first example is shown below. Note that the call graph depth has been expanded to reveal three newly resolved dispatches to `getSimpleName`, which are not resolved by RTA because the instance of the `Class` object is returned by `getClass`.
 
 ![XTA](/images/posts/call-graph-construction-algorithms-explained/XTA.png)
-				
+
+The idea of adding constraints to RTA to improve the accuracy and soundness of the base algorithm is an interesting idea and worth pursuing deeper. If we assume the standard Von Neumann model of a computer programs can communicate data through the stack or the heap.  FTA adds constraints for communicating through the heap when new allocations are created and stored in a global variable, while MTA adds additional constraints for communicating through the stack when methods are called with parameters and return results.  One other way to pass information is by creating and throwing an exception.  Tip and Palsberg mention exception handling as an implementation issue, but do not propose a set of contraints to use as an approximation for analyzing programs with exceptions.  
+
+Since exception handling is extremely common in Java code, I propose another RTA variation, Exception Type Analysis (ETA), which adds the following constraint. Add the allocated and inherited types of any method with a throw site to every method that contains a reachable type compatible catch block in the current reverse call graph of throwing method. Of course this contraint could be added to XTA. The result of ETA for the following code snippet is shown below.
+
+TODO: Code Snippet and ETA Screenshot
+
+Now let's play out the idea of adding constraints a bit further. Consider how RTA would address the following snippet of code.
+
+	Object o1 = new A();
+	Object o2 = new B();
+	o2.toString();
+
+The variable `o1` is assigned an allocation of type `A` and then the variable `o2` is assigned an allocation of type `B`. RTA is only looking at the allocation types, so the fact that `o2` could only be a type `B` is lost in the approximation. Without considering the assignments that were made to the variable `o2` it is impossible to rule out any other dispatch possibilities. We are reaching the point where we can no longer add any more constraints to refine the precision of our call graph without trying to directly determine the type of the variable for the callsite, which brings us to Variable Type Analysis (VTA) in the next section.Before we move on, let's consider how RTA performs on a library.  Since RTA starts with a worklist containing only the main method, a library without a main method would result in an empty call graph with some modifications to RTA. Without the application code that is using the library, we have to assume that any method could be called by the application. Depending on how many assumptions we want to make we could restrict that set to say only public methods in the library, but we'd be ruling out the fact that an application might extend a type and inherit a protected method or use reflection to call a private method.We should also assume that the application could allocate any type and pass it to a method, which pretty much brings us back to a Class Hierarchy Analysis in terms of precision.  FTA and MTA would fair better than RTA alone for this last assumption as they would at least filter those types based on the compatibility of their types. Finally there is still the possibility the library contains calls to abstract methods that do not have any concrete implementations, so RTA should at least include the library calls calculated in CHA.
 ## Idea 3 - Variable Type Analysis (VTA)
 
 ![Variable Type Analysis](/images/posts/call-graph-construction-algorithms-explained/0CFA.png)
