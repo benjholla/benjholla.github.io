@@ -14,7 +14,7 @@ I've also implemented each variation of the algorithms discussed below in an ope
 
 ## The Problem(s)
 
-Let's start by understanding why it might be hard to create a call graph. To keep things simple we are just going to be considering Java, but know that the problem gets harder when we start talking about dynamically typed langauges (such as Python or Ruby) or languages with function pointers (such as C, C++, or Objective-C).
+Let's start by understanding why it might be hard to create a call graph. To keep things simple we are just going to be considering Java, but know that the problem gets harder when we start talking about dynamically typed languages (such as Python or Ruby) or languages with function pointers (such as C, C++, or Objective-C).
 
 Consider the following program. 
 
@@ -116,6 +116,12 @@ In the example above `main` calls `foo`, which allocates a new `A` type and stor
 In this example `main` calls `foo`, which returns an allocation of type `A` that is then passed as a parameter in the call to `bar`. Again in this case the `toString` edge to `A`'s `toString` method would be missing because neither `bar` or its parents (`main`) allocated a type of `A`.
 
 As you may have guessed we could modify RTA to consider fields and method return/parameter types to improve the accuracy of RTA, which is exactly what [Tip and Palsberg](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf) proposed to do in the paper that inspired this post. In their paper, Tip and Palsberg propose to add several more constraints to RTA.
+
+The first set of constraints concerns global variables and forms the basis for the first variation of RTA, Field Type Analysis (FTA). FTA adds the constraint that any method that reads from a field can inherit the allocated types of any method's allocated or inherited allocation types.
+
+The second variation of RTA, Method Type Analysis (MTA), adds constraints involving method parameter types and method return types.  MTA adds the constraint that types allocated in a method and then passed to a method through a parameter should be compatible with the called methods parameter types.  MTA also adds the constraint that the return type of each called method be added to the set of allocated types. At first this may seem difficult because the return type would appear to depend on the resolution of dynamic dispatches, but the set of potential dynamic dispatches are statically typed to be the same return type.
+
+Finally, we can combine both sets of constraints defined by MTA and FTA to form a Hybrid Type Analysis (XTA). The result of XTA on our first example is shown below. Note that the call graph depth has been expanded to reveal three newly resolved dispatches to `getSimpleName`, which are not resolved by RTA because the instance of the `Class` object is returned by `getClass`.
 
 ![XTA](/images/posts/call-graph-construction-algorithms-explained/XTA.png)
 				
