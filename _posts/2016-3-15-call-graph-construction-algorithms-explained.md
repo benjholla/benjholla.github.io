@@ -201,3 +201,38 @@ It's also important to note that ConnectBot is an Android application, which mea
 The time column should be taken with a grain of salt.  I implemented most algorithms focusing on correctness and readability and didn't optimize queries to heavily (some caching would make a big difference). The Points-To analysis on the hand is very optimized code and completes in under a second and the results are then used to reconstruct the call and control flow graphs after the fact.
 
 Aside from timing, the *Min* column is interesting. In this table we are including library calls (call edges to abstract methods when no implmentation is available) so a callsite with no resolvable dispatches means the algorithm is unsound. We shoudl expect this from RTA and it's variants and depending on the implementation points-to analysis as well. In this case, the points-to analysis is unsound because it was not considering new allocations that occur inside the JDK.
+
+The *Average* column is also interesting. At runtime only one dispatch target is actually possible for a callsite at a given point in the program execution (its possible the callsite location could be a different target at a later point in the execution). So in an ideal world, our static analysis tool would report exactly one  potential dispatch target for each callsite (in a given context).  So an average number of potential dispatch targets that approaches one is a sign of a precise call graph. In our results the 0-CFA is the closest to the ideal value.
+
+Let's analyze one more application just so we can try out whole program analysis. For this project, I downloaded the source code of the [Apache Commons IO 2.4](https://commons.apache.org/proper/commons-io/) library and imported all library code into an Eclipse project.  I then included the `HexDumpTest` test from the test package. To make things simple I remove the JUnit assertions and added a main method that created a new `HexDumpTest` and called the `testDump`. The results are shown in the table below.
+
+| **Algorithm**     | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
+|-------------------|-------------------:|:---------:|:---------:|:-------:|:-------:|:-----------:|
+| RA                |              42.64 |    2005   |   12700   |    0    |    80   |    11.03    |
+| CHA               |               6.95 |    1817   |    5119   |    0    |    80   |     3.26    |
+| RTA               |               0.07 |     31    |     34    |    0    |    3    |     0.02    |
+| FTA               |               0.19 |     45    |     51    |    0    |    3    |     0.02    |
+| MTA               |                0.1 |     30    |     33    |    0    |    3    |     0.02    |
+| ETA               |               0.18 |     31    |     34    |    0    |    3    |     0.02    |
+| XTA               |               0.28 |     50    |     58    |    0    |    3    |     0.02    |
+| XTA + ETA         |               0.53 |     51    |     60    |    0    |    3    |     0.04    |
+| 0-CFA (Points-to) |                2.3 |    1325   |    2126   |    0    |    8    |     0.85    |
+
+In this table the *Min*, *Max*, and *Average* columns should be taken with another grain of salt because we are only considering methods reachable from the main method, so callsites outside of that reachable set of methods are dead code and should not have resolvable targets!
+
+For comparison, I commented out the `HexDumpTest.main` method and collected the table statistics again with library analysis enabled. Without the main method, the project contained 2929 callsites, with 1633 static dispatches and 1296 dynamic dispatches.
+
+| **Algorithm**     | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
+|-------------------|-------------------:|:---------:|:---------:|:-------:|---------|:-----------:|
+| RA                |           43.94 |    2139   |   13874   |    1    | 83      |    12.21    |
+| CHA               |            7.25 |    1882   |    5298   |    1    | 80      |     3.42    |
+| RTA               |            5.12 |    1159   |    1812   |    0    | 10      |     0.59    |
+| FTA               |           10.11 |    1280   |    2201   |    0    | 15      |     0.91    |
+| MTA               |            6.84 |    1196   |    1837   |    0    | 4       |     0.63    |
+| ETA               |            9.28 |    1154   |    1784   |    0    | 8       |     0.56    |
+| XTA               |           10.81 |    1321   |    2138   |    0    | 9       |     0.89    |
+| XTA + ETA         |           14.54 |    1321   |    2152   |    0    | 10      |     0.91    |
+| 0-CFA (Points-to) |            2.39 |    1400   |    2303   |    0    | 9       |     1.01    |
+
+So to answer the question, which algorithm is the best? CHA is a great contender for when soundness is required and we don't want to invest a lot of computation time. If we can relax the soundness requirement a bit we might consider RTA or one of its variants, but in my experience most research is trending towards figuring out how to scale a points-to analysis for [sound-ish](http://soundiness.org/) and precise results.
+
