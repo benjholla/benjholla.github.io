@@ -181,4 +181,15 @@ In general a points-to based call graph will suffer from similar ailments as RTA
 ## Evaluation and Conclusion
 So...which call graph construction algorithm should I use? Well let's run some numbers on a large application and see.  Personally, when I test out a new program analysis tool, I like to use the Android application [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot&hl=en) because I'm familiar with it and it is open source, fairly large (~235 classes, 33K logical lines of code), and decently complex. The developer(s) always seem to do something a little differently than you would expect.  For instance, ConnectBot has an abstract class that defines a concrete method, which is then intentionally overridden by all the abstract class's children.  The base method is an empty method implementation that just has a comment to the effect of *"all base classes should override this method"*, which just pains me to see because without marking the method abstract we can't actually guarantee that all children will implement the method.  This is one of the reasons why we have abstract methods in the first place! So if it is true that all the children override the concrete method and the base method's type cannot be instantiated (because it's abstract) then the base method is actually dead code and should be removed from the CHA result.  Anyway, thank you ConnectBot developers for making my program analysis code better by writing goofy code, but...<center><img src="/images/posts/call-graph-construction-algorithms-explained/whyyy.jpg" alt="Whyyy" width="50%" height="50%" /></center>
 The results of running each call graph construction algorithm on ConnectBot are shown in the table below.
-
+
+| **Algorithm**                         | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
+|---------------------------------------|--------------------|-----------|-----------|---------|---------|-------------|
+| Reachability Analysis (RA)            | 452.96             | 4065      | 30067     | 1       | 91      | 6.25        |
+| Class Hierarchy Analysis (CHA)        | 75.38              | 3490      | 9400      | 1       | 31      | 1.40        |
+| Rapid Type Analysis (RTA)             | 29.03              | 2515      | 5166      | 0       | 5       | 0.50        |
+| Field Type Analysis (FTA)             | 128.12             | 2963      | 6969      | 0       | 12      | 0.93        |
+| Method Type Analysis (MTA)            | 38.04              | 2629      | 5462      | 0       | 5       | 0.58        |
+| Exception Type Analysis (ETA)         | 177.02             | 2503      | 5359      | 0       | 11      | 0.52        |
+| Classic Hybrid Type Analysis (XTA)    | 94.52              | 2987      | 6776      | 0       | 10      | 0.81        |
+| Hybrid Type Analysis (XTA)            | 279.82             | 2954      | 6860      | 0       | 15      | 0.83        |
+| Context-Insensitive Points-To (0-CFA) | 37.51              | 3073      | 6388      | 0       | 9       | 1.09        |
