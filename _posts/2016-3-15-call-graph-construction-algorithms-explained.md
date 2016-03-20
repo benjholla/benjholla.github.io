@@ -184,12 +184,12 @@ In general a points-to based call graph will suffer from similar ailments as RTA
 
 | **Algorithm**                         | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
 |---------------------------------------|--------------------|-----------|-----------|---------|---------|-------------|
-| Reachability Analysis (RA)            | 452.96             | 4065      | 30067     | 1       | 91      | 6.25        |
-| Class Hierarchy Analysis (CHA)        | 75.38              | 3490      | 9400      | 1       | 31      | 1.40        |
-| Rapid Type Analysis (RTA)             | 29.03              | 2515      | 5166      | 0       | 5       | 0.50        |
-| Field Type Analysis (FTA)             | 128.12             | 2963      | 6969      | 0       | 12      | 0.93        |
-| Method Type Analysis (MTA)            | 38.04              | 2629      | 5462      | 0       | 5       | 0.58        |
-| Exception Type Analysis (ETA)         | 177.02             | 2503      | 5359      | 0       | 11      | 0.52        |
-| Classic Hybrid Type Analysis (XTA)    | 94.52              | 2987      | 6776      | 0       | 10      | 0.81        |
-| Hybrid Type Analysis (XTA)            | 279.82             | 2954      | 6860      | 0       | 15      | 0.83        |
-| Context-Insensitive Points-To (0-CFA) | 37.51              | 3073      | 6388      | 0       | 9       | 1.09        |
+| Reachability&nbsp;Analysis (RA)            | 452.96             | 4065      | 30067     | 1       | 91      | 6.25        |
+| Class&nbsp;Hierarchy&nbsp;Analysis (CHA)        | 75.38              | 3490      | 9400      | 1       | 31      | 1.40        |
+| Rapid&nbsp;Type&nbsp;Analysis (RTA)             | 29.03              | 2515      | 5166      | 0       | 5       | 0.50        |
+| Field&nbsp;Type&nbsp;Analysis (FTA)             | 128.12             | 2963      | 6969      | 0       | 12      | 0.93        |
+| Method&nbsp;Type&nbsp;Analysis (MTA)            | 38.04              | 2629      | 5462      | 0       | 5       | 0.58        |
+| Exception&nbsp;Type&nbsp;Analysis (ETA)         | 177.02             | 2503      | 5359      | 0       | 11      | 0.52        |
+| Classic&nbsp;Hybrid&nbsp;Type&nbsp;Analysis (XTA)    | 94.52              | 2987      | 6776      | 0       | 10      | 0.81        |
+| Hybrid&nbsp;Type&nbsp;Analysis (XTA)            | 279.82             | 2954      | 6860      | 0       | 15      | 0.83        |
+| Context-Insensitive&nbsp;Points-To (0-CFA) | 37.51              | 3073      | 6388      | 0       | 9       | 1.09        |
