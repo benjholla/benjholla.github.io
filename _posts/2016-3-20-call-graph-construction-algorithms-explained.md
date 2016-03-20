@@ -4,7 +4,9 @@ title: Call Graph Construction Algorithms Explained
 draft: false
 ---
 
-A call graph is an artifact produced by program analysis tools to record the relationships between a function and the functions it calls. The figure below shows a call graph for a simple Java program that indicates the Java program has a method `B` that calls the method `C` and that `C` in turn calls methods `B` and `D`. If you've ever wondered how these call graphs actually get generated then keep reading because in this post I'll be exploring several call graph construction algorithms and their tradeoffs in a way that should be simple to understand.
+A call graph is an artifact produced by program analysis tools to record the relationships between a function and the functions it calls. If you've ever wondered how these call graphs actually get generated then keep reading because in this post I'll be exploring several call graph construction algorithms and their tradeoffs in a way that should be simple to understand.
+
+The figure below shows a call graph for a simple Java program that indicates the Java program has a method `B` that calls the method `C` and that `C` in turn calls methods `B` and `D`.
 
 ![Atlas Call Graph](/images/posts/call-graph-construction-algorithms-explained/AtlasCallGraph.png)
 
