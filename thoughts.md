@@ -8,7 +8,6 @@ layout: default
            {% assign post = entry %}
            {% assign excerpt = post.excerpt %}
            {% include post_detail.html %}
-           {% break %}
         {% endunless %}
       {% endfor %}
 </div>
