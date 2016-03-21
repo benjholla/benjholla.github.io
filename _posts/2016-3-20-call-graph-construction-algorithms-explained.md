@@ -33,7 +33,7 @@ In Java, when we call a method, the binding between the callsite and the method 
 
 Since a static dispatch is resolvable at compile time, we know exactly where to find the code for the method we are calling before we even run the program. In Java, calls to methods marked `static` and calls to constructors are both static dispatches. Since everything in Java is an object it makes sense that we should always know exactly where the code to construct new objects is located in our program. Methods that are marked static (class methods) do not require that we create an instance of an object to invoke the method. Every executable Java program has at least one static method, the main method, which makes sense because before we run the program we haven't created any new objects yet, but we still want to invoke some procedure to use as an entry point into the program.
 
-	// a static dispatch can be called directly on a Type without 
+	// a static dispatch can be called directly on a type without 
 	// an instance such as this hypothetical class method that 
 	// runs a simulation procedure
 	Animal.runSimulation();
@@ -46,7 +46,7 @@ Now remember that every object in Java can be drawn in a tree hierarchy with `ja
 
 <center><img src="/images/posts/call-graph-construction-algorithms-explained/TypeHierarchy.png" alt="Type Hierarchy" /></center>
 
-Any non-private instance method declared in a parent type is inherited by child, unless that child provides an alternative implementation of the inherited method (by overriding the method). As a result of Java's type hierarchy we can also assigned any object type to a variable of the same type or a variable with the type of any of the object's parent types (including `java.lang.Object`). This means that someone could write the following code.
+Any non-private instance method declared in a parent type is inherited by the child, unless that child provides an alternative implementation of the inherited method (by overriding the method). As a result of Java's type hierarchy we can also assigned any object type to a variable of the same type or a variable with the type of any of the object's parent types (including `java.lang.Object`). This means that someone could write the following code.
 
 	Object o;
 	
@@ -58,7 +58,7 @@ Any non-private instance method declared in a parent type is inherited by child,
 
 The instance method `toString` is declared in `java.lang.Object` so it can be called on any object type. Since we don't know the type of the object in variable `o` we have to assume that `java.lang.Object`'s `toString` method or any object that overrides `toString` could be called at runtime! Since Java highly encourages developers to override the `toString` method this leaves us with quite a few possibilities (and only one correct answer).
 
-To answer our questions from above, we would all probably agree that an edge from the `print` callsite (at `b2.print(c2)`) to `B`'s `print` method implementation should be in our call graph because `B`'s `print` method is what gets executed at runtime. We also know that it could be tricky to figure out exactly which method would get called at runtime as a result of a dynamic dispatch. So should we conservatively add edges to `A` and `B`'s `print` methods as well if we can't figure out the type of `b2` even though `A` and `B`'s `print` methods are never called? What's better a call graph with all of the possible edges or a call graph with only the edges we are sure are correct?
+To answer our questions from above, we would all probably agree that an edge from the `print` callsite (at `b2.print(c2)`) to `B`'s `print` method implementation should be in our call graph because `B`'s `print` method is what gets executed at runtime. We also know that it could be tricky to figure out exactly which method would get called at runtime as a result of a dynamic dispatch because it could be tricky to statically determine the runtime type of `b2`. So should we conservatively add edges to `A`, `B`, `C`, and `D`'s `print` methods if we can't figure out the type of `b2` even though `A`, `C`, and `D`'s `print` methods are never called? What's better a call graph with all of the possible edges or a call graph with only the edges we are sure are correct?
 
 We say a call graph is "sound" if it has all the edges that are possible at runtime. We say a call graph is "precise" if it does not have edges that do not occur at runtime. It's easy to be sound, but its hard to be sound *and* precise.
 
