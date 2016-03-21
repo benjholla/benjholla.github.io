@@ -46,7 +46,7 @@ Now remember that every object in Java can be drawn in a tree hierarchy with `ja
 
 <center><img src="/images/posts/call-graph-construction-algorithms-explained/TypeHierarchy.png" alt="Type Hierarchy" /></center>
 
-Any non-private instance method declared in a parent type is inherited by the child, unless that child provides an alternative implementation of the inherited method (by overriding the method). As a result of Java's type hierarchy we can also assigned any object type to a variable of the same type or a variable with the type of any of the object's parent types (including `java.lang.Object`). This means that someone could write the following code.
+Any non-private instance method declared in a parent type is inherited by the child, unless that child provides an alternative implementation of the inherited method (by overriding the method). As a result of Java's type hierarchy we can also assign any object type to a variable of the same type or a variable with the type of any of the object's parent types (including `java.lang.Object`). This means that someone could write the following code.
 
 	Object o;
 	
@@ -211,7 +211,7 @@ It's also important to note that ConnectBot is an Android application, which mea
 
 The time column should be taken with a grain of salt.  I implemented most algorithms focusing on correctness and readability and didn't optimize queries to heavily (some caching would make a big difference). The Points-To analysis on the hand is very optimized code and completes in under a second and the results are then used to reconstruct the call and control flow graphs after the fact.
 
-Aside from timing, the *Min* column is interesting. In this table we are including library calls (call edges to abstract methods when no implementation is available) so a callsite with no resolvable dispatches means the algorithm is unsound. We should expect this from RTA and it's variants and depending on the implementation points-to analysis as well. In this case, the points-to analysis is unsound because it was not considering new allocations that occur inside the JDK.
+Aside from timing, the *Min* column is interesting. In this table we are including library calls (call edges to abstract methods when no implementation is available) so a callsite with no resolvable dispatches means the algorithm is unsound. We should expect this from RTA and it's variants and depending on the implementation points-to analysis as well. In this case, the points-to analysis is unsound because it was not considering new allocations that occur inside the Java Runtime libraries.
 
 The *Average* column is also interesting. At runtime only one dispatch target is actually possible for a callsite at a given point in the program execution (its possible the callsite location could be a different target at a later point in the execution). So in an ideal world, our static analysis tool would report exactly one potential dispatch target for each callsite (in a given context).  So an average number of potential dispatch targets that approaches one is a sign of a precise call graph. In our results the 0-CFA is the closest to the ideal value.
 
