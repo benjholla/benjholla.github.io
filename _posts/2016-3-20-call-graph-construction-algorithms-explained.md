@@ -193,61 +193,63 @@ In general a points-to based call graph will suffer from similar ailments as RTA
 So if it is true that all the children override the concrete method and the base method's type cannot be instantiated (because it's abstract) then the base method is actually dead code and should be removed from the CHA result.  Thank you ConnectBot developers for making my program analysis code better by writing goofy code, but...<center><img src="/images/posts/call-graph-construction-algorithms-explained/whyyy.jpg" alt="Whyyy" width="50%" height="50%" /></center>
 The results of running each call graph construction algorithm on ConnectBot are shown in the table below.
 
-ConnectBot contains 9966 callsites with 3938 static dispatches and 6028 dynamic dispatches.  Of the 6028 dynamic dispatch callsites, I computed the minimum, maximum, and average number of potential dispatch targets each algorithm resolved. The number of nodes refers to the number of methods in the resulting call graph, whereas the number of edges refers to the number of call edge relationships in the resulting call graph.
+ConnectBot contains 9,966 callsites with 3,938 static dispatches and 6,028 dynamic dispatches.  Of the 6,028 dynamic dispatch callsites, I computed the minimum, maximum, and average number of potential dispatch targets each algorithm resolved. The number of nodes refers to the number of methods in the resulting call graph, whereas the number of edges refers to the number of call edge relationships in the resulting call graph.
 
 It's also important to note that ConnectBot is an Android application, which means it does not have a main method. It is possible to model the Android lifecycle to figure out the application entry points, but that was not done for this analysis and the call graphs were simply produced using the library assumptions stated earlier for each algorithm.
 
 | **Algorithm**     | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
 |-------------------|-------------------:|:---------:|:---------:|:-------:|:-------:|:-----------:|
-| RA                |             452.96 |    4065   |   30067   |    1    |    91   |     6.25    |
-| CHA               |              75.38 |    3490   |    9400   |    1    |    31   |     1.40    |
-| RTA               |              29.03 |    2515   |    5166   |    0    |    5    |     0.50    |
-| FTA               |             128.12 |    2963   |    6969   |    0    |    12   |     0.93    |
-| MTA               |              38.04 |    2629   |    5462   |    0    |    5    |     0.58    |
-| ETA               |             177.02 |    2503   |    5359   |    0    |    11   |     0.52    |
-| XTA               |              94.52 |    2987   |    6776   |    0    |    10   |     0.81    |
-| XTA + ETA         |             279.82 |    2954   |    6860   |    0    |    15   |     0.83    |
-| 0-CFA (Points-to) |              37.51 |    3073   |    6388   |    0    |    9    |     1.09    |
+| RA                |             452.96 |    4,065   |   30,067   |    1    |    91   |     6.25    |
+| CHA               |              75.38 |    3,490   |    9,400   |    1    |    31   |     1.40    |
+| RTA               |              29.03 |    2,515   |    5,166   |    0    |    5    |     0.50    |
+| FTA               |             128.12 |    2,963   |    6,969   |    0    |    12   |     0.93    |
+| MTA               |              38.04 |    2,629   |    5,462   |    0    |    5    |     0.58    |
+| ETA               |             177.02 |    2,503   |    5,359   |    0    |    11   |     0.52    |
+| XTA               |              94.52 |    2,987   |    6,776   |    0    |    10   |     0.81    |
+| XTA + ETA         |             279.82 |    2,954   |    6,860   |    0    |    15   |     0.83    |
+| 0-CFA (Points-to) |              37.51 |    3,073   |    6,388   |    0    |    9    |     1.09    |
 
-The time column should be taken with a grain of salt.  I implemented most algorithms focusing on correctness and readability and didn't optimize queries to heavily (some caching would make a big difference). The Points-To analysis on the hand is very optimized code and completes in under a second and the results are then used to reconstruct the call and control flow graphs after the fact.
+The time column should be taken with a grain of salt.  I implemented most algorithms focusing on correctness and readability and didn't optimize the code too heavily (some caching would go a long way). The points-to analysis on the hand is very optimized code and completes in under half a second and the results are then used to reconstruct the call and control flow graphs after the fact.
 
-Aside from timing, the *Min* column is interesting. In this table we are including library calls (call edges to abstract methods when no implementation is available) so a callsite with no resolvable dispatches means the algorithm is unsound. We should expect this from RTA and it's variants and depending on the implementation points-to analysis as well. In this case, the points-to analysis is unsound because it was not considering new allocations that occur inside the Java Runtime libraries.
+Aside from timing, the *Min* column is interesting. In this table we are including library calls (call edges to abstract methods when no implementation is available) so a callsite with no resolvable dispatches means the algorithm is unsound. We should expect this from RTA and its variants and depending on the implementation, points-to analysis as well. In this case, the points-to analysis is unsound because it was not considering new allocations that occur inside the Java Runtime libraries.
 
-The *Average* column is also interesting. At runtime only one dispatch target is actually possible for a callsite at a given point in the program execution (its possible the callsite location could be a different target at a later point in the execution). So in an ideal world, our static analysis tool would report exactly one potential dispatch target for each callsite (in a given context).  So an average number of potential dispatch targets that approaches one is a sign of a precise call graph. In our results the 0-CFA is the closest to the ideal value.
+The *Average* column is also interesting. At runtime only one dispatch target is actually possible for a callsite at a given point in the program execution (its possible the callsite location could be a different target at a later point in the execution). So in an ideal world, our static analysis tool would report exactly one potential dispatch target for each callsite (in a given context).  An average number of potential dispatch targets that approaches 1.0 is a sign of a precise call graph. In our results the 0-CFA is the closest to the ideal value.
 
 ### Apache Commons IO (Application Mode)
 
 Let's analyze one more application just so we can try out whole program analysis. For this project, I downloaded the source code of the [Apache Commons IO 2.4](https://commons.apache.org/proper/commons-io/) library and imported all library code into an Eclipse project.  I then included the `HexDumpTest` test from the test package. To make things simple I remove the JUnit assertions and added a main method that created a new `HexDumpTest` and called the `testDump`. The results are shown in the table below.
 
+The project contained 2,931 callsites, with 1,634 static dispatches and 1,297 dynamic dispatches.
+
 | **Algorithm**     | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
 |-------------------|-------------------:|:---------:|:---------:|:-------:|:-------:|:-----------:|
-| RA                |              42.64 |    2005   |   12700   |    0    |    80   |    11.03    |
-| CHA               |               6.95 |    1817   |    5119   |    0    |    80   |     3.26    |
+| RA                |              42.64 |    2,005   |   12,700   |    0    |    80   |    11.03    |
+| CHA               |               6.95 |    1,817   |    5,119   |    0    |    80   |     3.26    |
 | RTA               |               0.07 |     31    |     34    |    0    |    3    |     0.02    |
 | FTA               |               0.19 |     45    |     51    |    0    |    3    |     0.02    |
 | MTA               |                0.1 |     30    |     33    |    0    |    3    |     0.02    |
 | ETA               |               0.18 |     31    |     34    |    0    |    3    |     0.02    |
 | XTA               |               0.28 |     50    |     58    |    0    |    3    |     0.02    |
 | XTA + ETA         |               0.53 |     51    |     60    |    0    |    3    |     0.04    |
-| 0-CFA (Points-to) |                2.3 |    1325   |    2126   |    0    |    8    |     0.85    |
+| 0-CFA (Points-to) |                2.3 |    1,325   |    2,126   |    0    |    8    |     0.85    |
 
 In this table the *Min*, *Max*, and *Average* columns should be taken with another grain of salt because we are only considering methods reachable from the main method, so callsites outside of that reachable set of methods are dead code and should not have resolvable targets!
 
 ### Apache Commons IO (Library Mode)
 
-For comparison, I commented out the `HexDumpTest.main` method and collected the table statistics again with library analysis enabled. Without the main method, the project contained 2929 callsites, with 1633 static dispatches and 1296 dynamic dispatches.
+For comparison, I commented out the `HexDumpTest.main` method and collected the table statistics again with library analysis enabled. Without the main method, the project contained 2,929 callsites, with 1,633 static dispatches and 1,296 dynamic dispatches.
 
 | **Algorithm**     | **Time (Seconds)** | **Nodes** | **Edges** | **Min** | **Max** | **Average** |
 |-------------------|-------------------:|:---------:|:---------:|:-------:|---------|:-----------:|
-| RA                |           43.94 |    2139   |   13874   |    1    | 83      |    12.21    |
-| CHA               |            7.25 |    1882   |    5298   |    1    | 80      |     3.42    |
-| RTA               |            5.12 |    1159   |    1812   |    0    | 10      |     0.59    |
-| FTA               |           10.11 |    1280   |    2201   |    0    | 15      |     0.91    |
-| MTA               |            6.84 |    1196   |    1837   |    0    | 4       |     0.63    |
-| ETA               |            9.28 |    1154   |    1784   |    0    | 8       |     0.56    |
-| XTA               |           10.81 |    1321   |    2138   |    0    | 9       |     0.89    |
-| XTA + ETA         |           14.54 |    1321   |    2152   |    0    | 10      |     0.91    |
-| 0-CFA (Points-to) |            2.39 |    1400   |    2303   |    0    | 9       |     1.01    |
+| RA                |           43.94 |    2,139   |   13,874   |    1    | 83      |    12.21    |
+| CHA               |            7.25 |    1,882   |    5,298   |    1    | 80      |     3.42    |
+| RTA               |            5.12 |    1,159   |    1,812   |    0    | 10      |     0.59    |
+| FTA               |           10.11 |    1,280   |    2,201   |    0    | 15      |     0.91    |
+| MTA               |            6.84 |    1,196   |    1,837   |    0    | 4       |     0.63    |
+| ETA               |            9.28 |    1,154   |    1,784   |    0    | 8       |     0.56    |
+| XTA               |           10.81 |    1,321   |    2,138   |    0    | 9       |     0.89    |
+| XTA + ETA         |           14.54 |    1,321   |    2,152   |    0    | 10      |     0.91    |
+| 0-CFA (Points-to) |            2.39 |    1,400   |    2,303   |    0    | 9       |     1.01    |
 
 So to answer the question, which algorithm is the best? CHA is a great contender for when soundness is required and we don't want to invest a lot of computation time. If we can relax the soundness requirement a bit we might consider RTA or one of its variants, but in my experience most research is trending towards figuring out how to scale a points-to analysis for [sound-ish](http://soundiness.org/) and precise results.
 
