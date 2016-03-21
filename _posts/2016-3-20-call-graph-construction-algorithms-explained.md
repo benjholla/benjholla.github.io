@@ -253,6 +253,6 @@ So to answer the question, which algorithm is the best? CHA is a great contender
 
 ### Closing Thoughts
 
-Tip and Palsberg presenting an interesting diagram in [figure 1 of their paper](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf), which I have reproduced below with some modifications. 
+Tip and Palsberg present a nice overview diagram in [Figure 1 of their paper](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf), which I have reproduced below with some modifications.
 
 ![Summary](/images/posts/call-graph-construction-algorithms-explained/summary.png)
