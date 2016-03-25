@@ -19,6 +19,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 - [AtlasWBP](https://ben-holland.com/AtlasWBP/) - An Atlas frontend for processing Java WAR binaries.
 - [Toolbox Commons](https://ensoftcorp.github.io/toolbox-commons/) - A set of common utilities for program analysis using Atlas.
 - [Starter Toolbox](https://github.com/EnSoftCorp/Starter-Toolbox) - A barebone starter toolbox for building a domain specific toolbox on top of Atlas. This plugin supports a headless bulk analysis mode.
+- [Software Metrics](https://github.com/benjholla/SoftwareMetricsAssignment) - A program analysis assignment to calcuate software architecture metrics for afferent and efferent coupling.
 - [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
 - [Points-to Toolbox](https://ensoftcorp.github.io/points-to-toolbox/) - An Atlas native points-to analysis and utilities for enabling client analyses.
 - [Call Graph Toolbox](https://ensoftcorp.github.io/call-graph-toolbox) - A toolbox for visually experimenting with implementations of nine different call graph construction algorithms using partial or whole program analysis.
