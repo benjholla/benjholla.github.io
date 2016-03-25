@@ -46,7 +46,7 @@
     <script type="text/javascript">
         $(document).ready(function() { 
             $(".toggle-abstract").click(function() {
-                 $(this).closest('li').find(".abstract").toggle();
+                 $(this).closest('li').parent().next('.abstract').toggle();
                 return false;   
             });
         });
