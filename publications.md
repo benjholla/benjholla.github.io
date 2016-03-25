@@ -11,10 +11,9 @@ This page contains selected talks, papers, and other publications.
 
 ## 2015
 
-- <div class="publication"><a name="ASE2015"></a>Suresh Kothari, Benjamin Holland. **Computer-aided Collaborative Validation of Large Software.** *The 30th IEEE/ACM International Conference on Automated Software Engineering ([ASE 2015](http://ase2015.unl.edu/#computer-aided-collaborative-validation-tutorial))*, Lincoln, Nebraska, November 2015.<br/>
+- <a name="ASE2015"></a>Suresh Kothari, Benjamin Holland. **Computer-aided Collaborative Validation of Large Software.** *The 30th IEEE/ACM International Conference on Automated Software Engineering ([ASE 2015](http://ase2015.unl.edu/#computer-aided-collaborative-validation-tutorial))*, Lincoln, Nebraska, November 2015.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract" id="ASE2015-abstract">Abstract</a>]&nbsp;[[Materials](https://goo.gl/S7e5VG)]
 <div class="abstract"><p>Neither manual nor totally automated discovery of software vulnerabilities is practical. Manual discovery requires extremely laborious work by highly skilled software analysts and totally automated discovery is riddled with intractable problems.</p><p>This tutorial introduces a novel practical approach for machine-enabled human-in-the-loop discovery of software vulnerabilities, and is based on "amplifying human intelligence" rather than trying to replace human intelligence. The approach is supported by a suite of tools with unique capabilities that enable human analysts to quickly identify and understand the relevant parts of large software and perform "what-if experiments" in order to discover highly sophisticated vulnerabilities.  These tools are advanced through large Defense Advanced Research Projects Agency (DARPA) projects and their effectiveness has been demonstrated for discovering sophisticated malware challenges.</p></div>
-</div>
 
 - <a name="RockwellCollins2015"></a>Jeremías Sauceda, Benjamin Holland, Suresh Kothari. **Visual Models to Solve Hard Problems at the Intersection of Cybersecurity and Software Reliability.** *Invited Brown Bag Presentation at [Rockwell Collins](https://www.rockwellcollins.com/)*, Cedar Rapids, Iowa, November 2015.<br/>
 **Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
