@@ -35,6 +35,8 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 [QuestionableCode.org](https://questionablecode.org) is project to audit every Android binary application installed on a Samsung Galaxy Tab 4 tablet.
 
 ## Cyber Defense Competition Scenarios
+<a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/cdc.png" alt="Cyber Defense Competition Scenarios" width="55" height="55" /></a>
+
 I've developed several vulnerable web applications and challenge anomalies for use in cyber defense competitions at Iowa State University.  For more details see [https://github.com/ISEAGE-ISU](https://github.com/ISEAGE-ISU).
 
 - [https://github.com/benjholla/CompletelyDigitalClips](https://github.com/benjholla/CompletelyDigitalClips)
