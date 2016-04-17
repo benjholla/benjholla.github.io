@@ -23,6 +23,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 - [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
 - [Points-to Toolbox](https://ensoftcorp.github.io/points-to-toolbox/) - An Atlas native points-to analysis and utilities for enabling client analyses.
 - [Call Graph Toolbox](https://ensoftcorp.github.io/call-graph-toolbox) - A toolbox for visually experimenting with implementations of nine different call graph construction algorithms using partial or whole program analysis.
+- [Slicing Toolbox](https://ensoftcorp.github.io/slicing-toolbox/) - A toolbox for creating Program Dependence Graph (PDG) based program slices.
 
 ## BrewLog&nbsp;/&nbsp;SoapLog
 <a href="https://ben-holland.com/BrewLog/"><img src="https://raw.githubusercontent.com/benjholla/BrewLog/master/images/logo.png" alt="Ben's Brew Log" width="55" height="55" /></a>&nbsp;&nbsp;<a href="https://ben-holland.com/SoapLog/"><img src="https://raw.githubusercontent.com/benjholla/SoapLog/master/images/logo.png" alt="Ben's Soap Log" width="60" height="60" /></a>
