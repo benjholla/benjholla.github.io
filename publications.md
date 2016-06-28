@@ -29,9 +29,17 @@ This page contains selected talks, papers, and other publications.
 </ol>
 </div>
 
+<a name="2016"></a>
+
+## 2016
+
+- <a name="ISU-FAN-APRIL2016"></a>Benjamin Holland. **Stealing Web Browser Cookies.** *Iowa State University Friday at Noon Activity*, Ames, Iowa, April 2016.<br/>
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Flyer](/slides/FAN_StealingWebBrowserCookies)]&nbsp;[[Video](https://www.youtube.com/watch?v=D6zFJn2n6Y4)]&nbsp;[[Tool](https://github.com/benjholla/CookieMonster)]
+<div class="abstract"><p>After you log into a website your web browser is given a "cookie".  Until you log out, your identity is your possession of that cookie.  It's no wonder attackers love to steal your cookies. Let's take a look at how attackers steal from the cookie jar, what they can do with them, and how you can protect yourself.</p></div>
+
 <a name="2015"></a>
 
-## 2015
+## 2015 
 
 - <a name="ASE2015"></a>Suresh Kothari, Benjamin Holland. **Computer-aided Collaborative Validation of Large Software.** *The 30th IEEE/ACM International Conference on Automated Software Engineering ([ASE 2015](http://ase2015.unl.edu/#computer-aided-collaborative-validation-tutorial))*, Lincoln, Nebraska, November 2015.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://goo.gl/S7e5VG)]
