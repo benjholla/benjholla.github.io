@@ -27,7 +27,7 @@ This page contains selected talks, papers, and other publications.
 <li>Teach interactive tools to create visual models to analyze Java bytecode.</li>
 <li>Provide hands-on experience of applying visual models with interactive visualization to audit an application for information leakage threats.</li>
 </ol>
-</p></div>
+</div>
 
 <a name="2015"></a>
 
