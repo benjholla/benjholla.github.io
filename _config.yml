@@ -74,5 +74,11 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - LICENSE
+    - JekylNow-LICENSE
     - README.md
     - attributions.txt
+    - CNAME
+    - .git/
+    - .gitignore
+    - .DS_Store
+    - Thumbs.db
