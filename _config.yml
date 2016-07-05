@@ -68,9 +68,6 @@ sass:
 gems:
   - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  
-include:
-    - favicon/ # favicons
 
 # Exclude these files from your production _site
 exclude:
@@ -85,3 +82,7 @@ exclude:
     - .gitignore
     - .DS_Store
     - Thumbs.db
+
+# Include the following files and directories
+include:
+    - favicon/ # favicons
