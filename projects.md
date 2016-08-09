@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-This page contains information on a few hobby projects. Anything not listed here can probably be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
+This page contains information on a few selected projects. Anything not listed here can be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
 
 ## JReFrameworker
 <a href="https://ben-holland.com/JReFrameworker/"><img src="https://ben-holland.com/JReFrameworker/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
