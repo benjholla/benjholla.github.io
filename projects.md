@@ -7,9 +7,9 @@ permalink: /projects/
 This page contains information on a few selected projects. Anything not listed here can be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
 
 ## JReFrameworker
-<a href="https://ben-holland.com/JReFrameworker/"><img src="https://ben-holland.com/JReFrameworker/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
+<a href="https://jreframeworker/"><img src="https://jreframeworker/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
 
-[JReFrameworker](https://ben-holland.com/JReFrameworker/) is an Eclipse plugin for creating projects that allow the user to write annotated Java source that is automatically merged or inserted into the Java runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime environment. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
+[JReFrameworker](https://jreframeworker.com/) is an Eclipse plugin for creating projects that allow the user to write annotated Java source that is automatically merged or inserted into the Java runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime environment. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
 
 ## Atlas Plugins
 <img src="https://ben-holland.com/AtlasWBP/images/toolbox.png" alt="JReFrameworker" width="55" height="55" />
