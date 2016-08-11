@@ -7,7 +7,7 @@ permalink: /projects/
 This page contains information on a few selected projects. Anything not listed here can be found on my Github account at [https://github.com/benjholla](https://github.com/benjholla).
 
 ## JReFrameworker
-<a href="https://jreframeworker/"><img src="https://jreframeworker/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
+<a href="https://jreframeworker.com/"><img src="https://jreframeworker.com/images/JReFrameworker.png" alt="JReFrameworker" width="48" height="55" /></a>
 
 [JReFrameworker](https://jreframeworker.com/) is an Eclipse plugin for creating projects that allow the user to write annotated Java source that is automatically merged or inserted into the Java runtime. It was designed as a more user friendly way to write managed code rootkits (MCRs) for the Java runtime environment. The framework supports developing and debugging attack modules directly in the Eclipse IDE.
 
