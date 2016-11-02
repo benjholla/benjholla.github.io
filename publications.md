@@ -24,7 +24,7 @@ This page contains selected talks, papers, and other publications.
 
 ## 2016
 
-- <a name="MILCOM2016"></a>Suresh Kothari, Benjamin Holland. **Discovering Information Leakage Using Visual Program Models.** *[MILCOM](http://events.afcea.org/milcom16/public/enter.aspx)*, Baltimore, Maryland, November 2016.<br/>
+- <a name="MILCOM2016"></a>Suresh Kothari, Benjamin Holland. **Discovering Information Leakage Using Visual Program Models.** *[MILCOM 2016](http://events.afcea.org/milcom16/public/enter.aspx)*, Baltimore, Maryland, November 2016.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/MILCOM2016)]
 <div class="abstract"><p>This tutorial is about new genera of information leakage vulnerabilities, far more difficult to detect than the vulnerabilities that have previously dominated the software security landscape. We will survey attacks that have exploited information leakage vulnerabilities to steal sensitive information. We will show how to discover information leakage vulnerabilities using techniques and tools for visual modeling of software from our research on two high-profile DARPA programs, the Automated Program Analysis for Cybersecurity (APAC) and Space/Time Analysis for Cybersecurity (STAC).</p><p>The tutorial goals are:</p>
 <ol>
