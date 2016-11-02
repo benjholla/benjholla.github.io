@@ -11,16 +11,6 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
-- <a name="MILCOM2016"></a>Suresh Kothari, Benjamin Holland. **Discovering Information Leakage Using Visual Program Models.** *[MILCOM](http://events.afcea.org/milcom16/public/enter.aspx)*, Baltimore, Maryland, November 2016.<br/>
-**Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/MILCOM2016)]
-<div class="abstract"><p>This tutorial is about new genera of information leakage vulnerabilities, far more difficult to detect than the vulnerabilities that have previously dominated the software security landscape. We will survey attacks that have exploited information leakage vulnerabilities to steal sensitive information. We will show how to discover information leakage vulnerabilities using techniques and tools for visual modeling of software from our research on two high-profile DARPA programs, the Automated Program Analysis for Cybersecurity (APAC) and Space/Time Analysis for Cybersecurity (STAC).</p><p>The tutorial goals are:</p>
-<ol>
-<li>Provide broad knowledge and the key concepts about information leakage threats.</li>
-<li>Teach interactive tools to create visual models to analyze Java bytecode.</li>
-<li>Provide hands-on experience of applying visual models with interactive visualization to audit an application for information leakage threats.</li>
-</ol>
-</div>
-
 - <a name="ISUCybersecurity2016"></a>Benjamin Holland. **Exploring the space in between bugs and malware.** *[Iowa State University Cybersecurity Seminar Series](http://www.ece.iastate.edu/seminars-and-events/cybersecurity-seminar-series-ben-holland/)*, Ames, Iowa, November 2016.<br/>
 **Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
 <div class="abstract"><p>We live in an age of software problems with catastrophic consequences. An extra goto in Apple's SSL implementation compromised certificate checks for the better part of a year. An erroneous integer conversion in the Ariane 5 launch destroyed the European Space Agency rocket and its cargo valued at 500 million dollars. Often the problem is just a few lines of code and looking for it is like searching for a needle in a haystack, but without knowing what a needle looks like. Moreover the problems are often so subtle that it is difficult to tell if the problem is intentionally malicious or an honest mistake. The traditional approach to bug and malware detection fails to detect novel attacks or discover new classes of bugs. To make matters worse, both problems can remain dormant and can easily evade testing. In this talk we critically explore the challenges involved in bug and malware detection. To explore concepts further we leverage a framework called <a href="">JReFrameworker</a> for manipulating the Java runtime environment to develop managed code rootkits.</p></div>
@@ -33,6 +23,16 @@ This page contains selected talks, papers, and other publications.
 <a name="2016"></a>
 
 ## 2016
+
+- <a name="MILCOM2016"></a>Suresh Kothari, Benjamin Holland. **Discovering Information Leakage Using Visual Program Models.** *[MILCOM](http://events.afcea.org/milcom16/public/enter.aspx)*, Baltimore, Maryland, November 2016.<br/>
+**Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/MILCOM2016)]
+<div class="abstract"><p>This tutorial is about new genera of information leakage vulnerabilities, far more difficult to detect than the vulnerabilities that have previously dominated the software security landscape. We will survey attacks that have exploited information leakage vulnerabilities to steal sensitive information. We will show how to discover information leakage vulnerabilities using techniques and tools for visual modeling of software from our research on two high-profile DARPA programs, the Automated Program Analysis for Cybersecurity (APAC) and Space/Time Analysis for Cybersecurity (STAC).</p><p>The tutorial goals are:</p>
+<ol>
+<li>Provide broad knowledge and the key concepts about information leakage threats.</li>
+<li>Teach interactive tools to create visual models to analyze Java bytecode.</li>
+<li>Provide hands-on experience of applying visual models with interactive visualization to audit an application for information leakage threats.</li>
+</ol>
+</div>
 
 - <a name="SCAM2016"></a>Benjamin Holland, Ganesh Ram Santhanam, Payas Awadhutkar, and Suresh Kothari. **Statically-informed Dynamic Analysis Tools to Detect Algorithmic Complexity Vulnerabilities.** *The 16th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2016](http://www.ieee-scam.org/2016/))*, Raleigh, North Carolina, October 2016.<br/>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Paper](../papers/Statically-informed_Dynamic_Analysis_Tools_to_Detect_Algorithmic_Complexity_Vulnerabilities.pdf)]&nbsp;[[Slides](/slides/SCAM2016.pdf)]&nbsp;[[Video](https://www.youtube.com/watch?v=8dH7q9aPD44)]&nbsp;[[SID Tools](https://ensoftcorp.github.io/SID/)]
