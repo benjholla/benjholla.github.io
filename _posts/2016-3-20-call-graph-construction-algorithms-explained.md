@@ -6,6 +6,8 @@ draft: false
 
 A call graph is an artifact produced by program analysis tools to record the relationships between a function and the functions it calls. If you've ever wondered how these call graphs actually get generated then keep reading because in this post I'll be exploring several call graph construction algorithms and their tradeoffs.
 
+**Note:** *Some issues with the information in the RTA section of this article have been brought to my attention and will be fixed shortly. Thanks to David Bacon for pointing them out to me.*
+
 If you just want the nitty-gritty formal stuff then check out the [paper by Tip and Palsberg](http://web.cs.ucla.edu/~palsberg/paper/oopsla00.pdf), which inspired this post.
 
 Let's start by taking a look at a call graph. The figure below shows a call graph for a simple Java program that indicates the Java program has a method `B` that calls the method `C` and that `C` in turn calls methods `B` and `D`.
