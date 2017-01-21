@@ -28,6 +28,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+	<link rel="stylesheet" href="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/css/lightbox.min.css">
+	
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   
     <script type="text/javascript">if(window.location.protocol != "https:") { window.location.href = "https:" + window.location.href.substring(window.location.protocol.length); }</script>
@@ -100,6 +102,8 @@
         </footer>
       </div>
     </div>
+	
+	<script type="text/javascript" src="{% if site.baseurl %}{{ site.baseurl }}{% endif %}/js/lightbox.min.js"></script>
 
     {% include analytics.html %}
   </body>
