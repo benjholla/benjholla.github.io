@@ -47,7 +47,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
-    <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
+    <th><b>Social&nbsp;Video&nbsp;Service</b>&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
     <td>
@@ -66,7 +66,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
-    <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;ISU&nbsp;National&nbsp;CDC</th>
+    <th><b>Timesheet&nbsp;Application</b>&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;ISU&nbsp;National&nbsp;CDC</th>
   </tr>
   <tr>
     <td>
@@ -87,7 +87,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
-    <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
+    <th><b>Blackbook</b>&nbsp;(Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
   </tr>
   <tr>
     <td>
@@ -109,7 +109,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
-    <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
+    <th><b>Bad&nbsp;Twitter&nbsp;Clone</b>&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
     <td>
