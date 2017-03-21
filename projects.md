@@ -53,7 +53,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
     <td>
     	<center>
     	<a href="/images/projects/bad-youtube/homepage.png" data-lightbox="bad-youtube" data-title="Social Video Service">
-    		<img style="max-width:300px" src="/images/projects/bad-youtube/homepage.png" alt="Social Video Service Screenshot"/>
+    		<img style="max-width:300px" src="/images/projects/bad-youtube/thumbnail.png" alt="Social Video Service Screenshot"/>
     	</a>
     	</center>
     </td>
@@ -72,7 +72,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
   <tr>
     <td><center>
     	<a href="/images/projects/timesheet/timesheet.png" data-lightbox="timesheet-application" data-title="Timesheet Application">
-    		<img style="max-width:300px" src="/images/projects/timesheet/timesheet.png" alt="Timesheet Application Screenshot"/>
+    		<img style="max-width:300px" src="/images/projects/timesheet/thumbnail.png" alt="Timesheet Application Screenshot"/>
     	</a>
     	</center>
     </td>
@@ -89,7 +89,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
     <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
   </tr>
   <tr>
-    <td><center><img style="max-width:300px" src="/images/projects/blackbook/blackbook.png" alt="Blackbook Screenshot"/></center></td>
+    <td><center><img style="max-width:300px" src="/images/projects/blackbook/thumbnail.png" alt="Blackbook Screenshot"/></center></td>
   </tr>
   <tr>
     <td><center><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a><br /><a href="https://www.youtube.com/watch?v=YHz0pKAQo64">Promotional Video</a></center></td>
@@ -103,7 +103,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
-    <td><center><img style="max-width:300px" src="/images/projects/bad-twitter/homepage.png" alt="Bad Twitter Clone Screenshot"/></center></td>
+    <td><center><img style="max-width:300px" src="/images/projects/bad-twitter/thumbnail.png" alt="Bad Twitter Clone Screenshot"/></center></td>
   </tr>
   <tr>
     <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a></center></td>
