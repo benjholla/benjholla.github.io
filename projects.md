@@ -119,7 +119,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 	</td>
   </tr>
   <tr>
-    <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br />&nbsp;<br /></center></td>
+    <td><center>&nbsp;<br /><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br /></center></td>
   </tr>
 </table>
 </div>
