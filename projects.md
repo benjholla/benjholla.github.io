@@ -45,7 +45,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <center>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px" height="450px">
+<table>
   <tr>
     <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
   </tr>
@@ -65,9 +65,9 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px" height="450px">
+<table>
   <tr>
-    <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;National&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
+    <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;ISU&nbsp;National&nbsp;CDC</th>
   </tr>
   <tr>
     <td><center>
@@ -84,9 +84,9 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px" height="450px">
+<table>
   <tr>
-    <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
+    <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
   </tr>
   <tr>
     <td><center><img style="max-width:300px" src="/images/projects/blackbook/blackbook.png" alt="Blackbook Screenshot"/></center></td>
@@ -98,7 +98,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px" height="450px">
+<table>
   <tr>
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
@@ -110,5 +110,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
   </tr>
 </table>
 </div>
+
+<br />
 
 </center>
