@@ -44,18 +44,17 @@ I've developed several vulnerable web applications and challenge anomalies for u
 
 <center>
 
-<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
     <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
     <td>
-    	<center>
     	<a href="/images/projects/bad-youtube/homepage.png" data-lightbox="bad-youtube" data-title="Social Video Service">
     		<img style="max-width:300px" src="/images/projects/bad-youtube/thumbnail.png" alt="Social Video Service Screenshot"/>
     	</a>
-    	</center>
+		<a href="/images/projects/bad-youtube/architecture.png" data-lightbox="bad-youtube" data-title="Social Video Service Architecture"></a>
     </td>
   </tr>
   <tr>
@@ -64,17 +63,19 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
     <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;ISU&nbsp;National&nbsp;CDC</th>
   </tr>
   <tr>
-    <td><center>
+    <td>
     	<a href="/images/projects/timesheet/timesheet.png" data-lightbox="timesheet-application" data-title="Timesheet Application">
     		<img style="max-width:300px" src="/images/projects/timesheet/thumbnail.png" alt="Timesheet Application Screenshot"/>
     	</a>
-    	</center>
+		<a href="/images/projects/timesheet/homepage.png" data-lightbox="timesheet-application" data-title="Web Application Homepage"></a>
+		<a href="/images/projects/timesheet/portal.png" data-lightbox="timesheet-application" data-title="Timesheet Application Employee Portal"></a>
+		<a href="/images/projects/timesheet/admin.png" data-lightbox="timesheet-application" data-title="Timesheet Application Admin Functions"></a>
     </td>
   </tr>
   <tr>
@@ -83,13 +84,21 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
     <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
   </tr>
   <tr>
-    <td><center><img style="max-width:300px" src="/images/projects/blackbook/thumbnail.png" alt="Blackbook Screenshot"/></center></td>
+    <td>
+		<a href="/images/projects/blackbook/blackbook.png" data-lightbox="blackbook" data-title="Blackbook">
+    		<img style="max-width:300px" src="/images/projects/blackbook/thumbnail.png" alt="Blackbook Screenshot"/>
+    	</a>
+		<a href="/images/projects/blackbook/blackbook_login.png" data-lightbox="blackbook" data-title="Blackbook Login"></a>
+		<a href="/images/projects/blackbook/blackbook_users.png" data-lightbox="blackbook" data-title="Blackbook Users"></a>
+		<a href="/images/projects/blackbook/blackbook_ledger.png" data-lightbox="blackbook" data-title="Blackbook Ledger"></a>
+		<a href="/images/projects/blackbook/anonymouse.png" data-lightbox="blackbook" data-title="Fictional Adversary"></a>
+	</td>
   </tr>
   <tr>
     <td><center><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a><br /><a href="https://www.youtube.com/watch?v=YHz0pKAQo64">Promotional Video</a></center></td>
@@ -97,13 +106,17 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
   <tr>
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
-    <td><center><img style="max-width:300px" src="/images/projects/bad-twitter/thumbnail.png" alt="Bad Twitter Clone Screenshot"/></center></td>
+    <td>
+		<a href="/images/projects/bad-twitter/homepage.png" data-lightbox="bad-twitter-clone" data-title="Bad Twitter Clone">
+    		<img style="max-width:300px" src="/images/projects/bad-twitter/thumbnail.png" alt="Bad Twitter Clone"/>
+    	</a>
+	</td>
   </tr>
   <tr>
     <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br />&nbsp;<br /></center></td>
