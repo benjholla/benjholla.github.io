@@ -50,13 +50,13 @@ I've developed several vulnerable web applications and challenge anomalies for u
   </tr>
   <tr>
     <td>
-    	<a href="./images/projects/bad-youtube/homepage.png" data-lightbox="bad-youtube" data-title="Social Video Service">
-    		<img style="max-width:300px" src="./images/projects/bad-youtube/homepage.png" alt="Social Video Service Screenshot"/>
+    	<a href="/images/projects/bad-youtube/homepage.png" data-lightbox="bad-youtube" data-title="Social Video Service">
+    		<img style="max-width:300px" src="/images/projects/bad-youtube/homepage.png" alt="Social Video Service Screenshot"/>
     	</a>
     </td>
     <td>
-    	<a href="./images/projects/timesheet/timesheet.png" data-lightbox="timesheet-application" data-title="Timesheet Application">
-    		<img style="max-width:300px" src="./images/projects/timesheet/timesheet.png" alt="Timesheet Application Screenshot"/>
+    	<a href="/images/projects/timesheet/timesheet.png" data-lightbox="timesheet-application" data-title="Timesheet Application">
+    		<img style="max-width:300px" src="/images/projects/timesheet/timesheet.png" alt="Timesheet Application Screenshot"/>
     	</a>
     </td>
   </tr>
@@ -71,8 +71,8 @@ I've developed several vulnerable web applications and challenge anomalies for u
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
-    <td><img style="max-width:300px" src="./images/projects/blackbook/blackbook.png" alt="Blackbook Screenshot"/></td>
-    <td><img style="max-width:300px" src="./images/projects/bad-twitter/homepage.png" alt="Bad Twitter Clone Screenshot"/></td>
+    <td><img style="max-width:300px" src="/images/projects/blackbook/blackbook.png" alt="Blackbook Screenshot"/></td>
+    <td><img style="max-width:300px" src="/images/projects/bad-twitter/homepage.png" alt="Bad Twitter Clone Screenshot"/></td>
   </tr>
   <tr>
     <td><center><small><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a></small></center></td>
