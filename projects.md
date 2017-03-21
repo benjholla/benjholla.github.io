@@ -44,7 +44,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 
 <center>
 
-<div style="float:left; margin:5px;">
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
 <table>
   <tr>
     <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
@@ -64,7 +64,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin:5px;">
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
 <table>
   <tr>
     <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;ISU&nbsp;National&nbsp;CDC</th>
@@ -83,7 +83,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin:5px;">
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
 <table>
   <tr>
     <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;ISU&nbsp;CDC</th>
@@ -97,7 +97,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </table>
 </div>
 
-<div style="float:left; margin:5px;">
+<div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;>
 <table>
   <tr>
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
@@ -112,5 +112,3 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 </center>
-
-<p>&nbsp;</p>
