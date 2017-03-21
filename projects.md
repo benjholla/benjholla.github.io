@@ -106,11 +106,11 @@ I've developed several vulnerable web applications and challenge anomalies for u
     <td><center><img style="max-width:300px" src="/images/projects/bad-twitter/thumbnail.png" alt="Bad Twitter Clone Screenshot"/></center></td>
   </tr>
   <tr>
-    <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a>&nbsp;<br />&nbsp;<br /></center></td>
+    <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br />&nbsp;<br /></center></td>
   </tr>
 </table>
 </div>
 
-<br />
-
 </center>
+
+<p>&nbsp;</p>
