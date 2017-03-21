@@ -45,7 +45,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <center>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px">
+<table width="310px" height="450px">
   <tr>
     <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
   </tr>
@@ -65,7 +65,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px">
+<table width="310px" height="450px">
   <tr>
     <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;National&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
   </tr>
@@ -84,7 +84,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px">
+<table width="310px" height="450px">
   <tr>
     <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
   </tr>
@@ -98,7 +98,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 </div>
 
 <div style="float:left; margin-left:10px;">
-<table width="310px">
+<table width="310px" height="450px">
   <tr>
     <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
