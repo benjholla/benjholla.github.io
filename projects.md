@@ -46,7 +46,6 @@ I've developed several vulnerable web applications and challenge anomalies for u
 <table>
   <tr>
     <th>Social&nbsp;Video&nbsp;Service&nbsp;(PHP)<br>Completely&nbsp;Digital&nbsp;Clips<br>2015&nbsp;IT&nbsp;Olympics</th>
-    <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;National&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
   </tr>
   <tr>
     <td>
@@ -54,6 +53,17 @@ I've developed several vulnerable web applications and challenge anomalies for u
     		<img style="max-width:300px" src="/images/projects/bad-youtube/homepage.png" alt="Social Video Service Screenshot"/>
     	</a>
     </td>
+  </tr>
+  <tr>
+    <td><center><a href="https://github.com/benjholla/CompletelyDigitalClips">Web Application Source</a><br /><a href="https://github.com/benjholla/CompletelyDigitalClips/tree/master/anomalies">Competition Anomalies</a></center></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Timesheet&nbsp;Application&nbsp;(C)<br>Cloud&nbsp;Developers&nbsp;Club<br>2014&nbsp;National&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
+  </tr>
+  <tr>
     <td>
     	<a href="/images/projects/timesheet/timesheet.png" data-lightbox="timesheet-application" data-title="Timesheet Application">
     		<img style="max-width:300px" src="/images/projects/timesheet/timesheet.png" alt="Timesheet Application Screenshot"/>
@@ -61,22 +71,31 @@ I've developed several vulnerable web applications and challenge anomalies for u
     </td>
   </tr>
   <tr>
-    <td><center><small><a href="https://github.com/benjholla/CompletelyDigitalClips">Web Application Source</a><br /><a href="https://github.com/benjholla/CompletelyDigitalClips/tree/master/anomalies">Competition Anomalies</a></small></center></td>
-    <td><center><small><a href="https://github.com/benjholla/NCDC2014">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Spring_2014_NCDC_Anomalies">Competition Anomalies</a></small></center></td>
+    <td><center><a href="https://github.com/benjholla/NCDC2014">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Spring_2014_NCDC_Anomalies">Competition Anomalies</a></center></td>
   </tr>
 </table>
+
 <table>
   <tr>
     <th>Blackbook (Scala)<br>Cyber&nbsp;Disease&nbsp;Center<br>2013&nbsp;Cyber&nbsp;Defense&nbsp;Competition</th>
-    <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
   </tr>
   <tr>
     <td><img style="max-width:300px" src="/images/projects/blackbook/blackbook.png" alt="Blackbook Screenshot"/></td>
+  </tr>
+  <tr>
+    <td><center><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a><br /><a href="https://www.youtube.com/watch?v=YHz0pKAQo64">Promotional Video</a></center></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Bad&nbsp;Twitter&nbsp;Clone&nbsp;(PHP)<br>Colonial&nbsp;Data&nbsp;Center<br>2010&nbsp;IT&nbsp;Olympics</th>
+  </tr>
+  <tr>
     <td><img style="max-width:300px" src="/images/projects/bad-twitter/homepage.png" alt="Bad Twitter Clone Screenshot"/></td>
   </tr>
   <tr>
-    <td><center><small><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a></small></center></td>
-    <td><center><small><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a></small></center></td>
+    <td><center><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a></center></td>
   </tr>
 </table>
 </center>
