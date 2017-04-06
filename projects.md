@@ -37,6 +37,26 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 
 [QuestionableCode.org](https://questionablecode.org) is project to audit every Android binary application installed on a Samsung Galaxy Tab 4 tablet.
 
+## QuestionableCode.org
+<a href="https://github.com/benjholla/ZombieStrategies"><img src="/images/projects/zombie_strategies/logo.png" alt="ZombieStrategies.com" width="200" /></a>
+
+[ZombieStrategies.com](https://github.com/benjholla/ZombieStrategies) was a website where anyone could add, modify, or delete emergency supply locations (in case of a zombie apocalypse) along with a categorized list of supplies at each location. The locations database was seeded with over a 100 thousand locations including firearm dealers, gas stations, Walmarts, Targets, hospitals, hardware stores, and grocery stores. Due to realistic life demands I was unable to maintain the project and released most of the source code on Github.
+
+<table>
+  <tr>
+    <td>
+		<a href="https://youtu.be/9xb8_muQE10">
+    		<img style="max-width:300px" src="/images/projects/zombie_strategies/screenshot-web.png" alt="Zombie Strategies Website"/>
+    	</a>
+	</td>
+	<td>
+		<a href="https://youtu.be/6WBGLD_DBsw">
+    		<img style="max-width:300px" src="/images/projects/zombie_strategies/screenshot-ios.png" alt="Zobmie Strategies iOS App"/>
+    	</a>
+	</td>
+  </tr>
+</table>
+
 ## Cyber Defense Competition Scenarios
 <a href="https://github.com/ISEAGE-ISU"><img src="/images/cdc.png" alt="Cyber Defense Competition Scenarios" width="65" height="65" /></a>
 
