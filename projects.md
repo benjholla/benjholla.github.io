@@ -37,10 +37,10 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 
 [QuestionableCode.org](https://questionablecode.org) is project to audit every Android binary application installed on a Samsung Galaxy Tab 4 tablet.
 
-## QuestionableCode.org
-<a href="https://github.com/benjholla/ZombieStrategies"><img src="/images/projects/zombie_strategies/logo.png" alt="ZombieStrategies.com" width="200" /></a>
+## ZombieStrategies.com
+<a href="https://github.com/benjholla/ZombieStrategies"><img src="/images/projects/zombie_strategies/logo.png" alt="ZombieStrategies.com" width="260" /></a>
 
-[ZombieStrategies.com](https://github.com/benjholla/ZombieStrategies) was a website where anyone could add, modify, or delete emergency supply locations (in case of a zombie apocalypse) along with a categorized list of supplies at each location. The locations database was seeded with over a 100 thousand locations including firearm dealers, gas stations, Walmarts, Targets, hospitals, hardware stores, and grocery stores. Due to realistic life demands I was unable to maintain the project and released most of the source code on Github.
+[ZombieStrategies.com](https://github.com/benjholla/ZombieStrategies) was a website where anyone could add, modify, or delete emergency supply locations (in case of a zombie apocalypse) along with a categorized list of supplies at each location. The locations database was seeded with over a 100 thousand locations including firearm dealers, gas stations, Walmarts, Targets, hospitals, hardware stores, and grocery stores. Due to realistic life demands I was unable to maintain the project and released most of the source code on Github. This project was the result of a personal programming ambition and several years of scope creep.
 
 <table>
   <tr>
