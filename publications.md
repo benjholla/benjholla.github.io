@@ -15,6 +15,12 @@ This page contains selected talks, papers, and other publications.
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
 <div class="abstract"><p>Coming soon.</p></div>
 
+- <a name="MILCOM2017"></a>Suresh Kothari, Benjamin Holland. **Learn to Analyze and Verify Large Software for Cybersecurity and Safety.** *[MILCOM 2017](http://events.afcea.org/milcom17/public/enter.aspx)*, Baltimore, Maryland, October, 2017.<br/>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>Massive software systems are being built the way Egyptians were building pyramids, with the sheer force of human labor.  Agile development, programming languages, component libraries, and integrated development environments, help but they have not brought down the cost of developing and maintaining software. Software projects continue to run over projected budgets and schedule. The pervasive use of software has opened up dire possibilities of catastrophic accidents and attacks emanating from software vulnerabilities.</p>
+<p>The core problem is our inability to understand, analyze, and verify large software systematically. The need for automated analysis is clear given the enormous size of modern software.  Patching security holes with reactive automation is not the solution when we face zero-day software defects with deadly power for catastrophic destruction. Not only must automated software security analysis scale to large software but also be proactive and highly accurate.</p>
+<p>This tutorial is an introduction to fundamental software analysis principles, systematic problem solving, and automated tool support to address the challenges of large software. Whether you are an educator, a researcher, a software engineer, or a manager you will learn a completely new paradigm to think about software and how to manage the complexity of analyzing and verifying large software for cybersecurity and safety.</p></div>
+
 <a name="2017"></a>
 
 ## 2017
