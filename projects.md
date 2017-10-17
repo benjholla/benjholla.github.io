@@ -21,7 +21,8 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 - [Starter Toolbox](https://github.com/EnSoftCorp/Starter-Toolbox) - A barebone starter toolbox for building a domain specific toolbox on top of Atlas. This plugin supports a headless bulk analysis mode.
 - [Software Metrics](https://github.com/benjholla/SoftwareMetricsAssignment) - A program analysis assignment to calcuate software architecture metrics for afferent and efferent coupling.
 - [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
-- [Statically-informed Dynamic (SID) Analysis](https://ensoftcorp.github.io/SID/) - A toolbox for hybrid static and dynamic analysis
+- [SIDIS Toolbox](https://github.com/kcsl/sidis-toolbox) - A successor to [Statically-informed Dynamic (SID) Analysis](https://ensoftcorp.github.io/SID/) for hybrid static and dynamic analysis enabling Statically-informed Dynamic (SID) analysis and Dynamically-informed Static  (DIS) analysis.
+- [Projected Control Graph (PCG) Toolbox](https://ensoftcorp.github.io/pcg-toolbox/) - A toolbox for transforming Control Flow Graphs into compact Projected Control Graphs with respect to a set of control flow events.
 - [Immutability Toolbox](https://ensoftcorp.github.io/immutability-toolbox/) - A toolbox for object immutability analysis and method purity (side effect analysis).
 - [Points-to Toolbox](https://ensoftcorp.github.io/points-to-toolbox/) - An Atlas native points-to analysis and utilities for enabling client analyses.
 - [Call Graph Toolbox](https://ensoftcorp.github.io/call-graph-toolbox) - A toolbox for visually experimenting with implementations of nine different call graph construction algorithms using partial or whole program analysis.
