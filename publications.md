@@ -15,6 +15,11 @@ This page contains selected talks, papers, and other publications.
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
 <div class="abstract"><p>The paper presents COMB, a tool to improve accuracy and efficiency of software engineering tasks that hinge on computing all relevant program behaviors.</p><p>Computing all behaviors and selecting the relevant ones is computationally intractable. COMB uses Projected Control Graph (PCG) abstraction to derive the relevant behaviors directly and efficiently. The PCG is important as the number of behaviors relevant to a task is often significantly smaller than the totality of behaviors.</p><p>COMB provides extensive capabilities for program comprehension, analysis, and verification. We present a basic case study and a Linux verification study to demonstrate various capabilities of COMB and the addressed challenges. COMB is designed to support multiple programming languages. We demonstrate it for C and Java.</p></div>
 
+- <a name="USCC2018"></a>Benjamin Holland. **Program Analysis for Cybersecurity II.** *US Cyber Challenge Summer Bootcamps [(USCC 2018)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, and Nevada, June-August 2018.<br/>
+**Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>Materials and abstract coming soon.</p>
+</div>
+
 <a name="2017"></a>
 
 ## 2017
