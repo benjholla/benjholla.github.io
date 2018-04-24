@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Ben Holland is an ADB PhD candidate at [Iowa State University](https://www.iastate.edu/) with experience working on two high profile DARPA projects. He has extensive experience writing program analyzers to detect novel and sophisticated malware in Android applications and served on the ISU team as a key analyst for [DARPA's Automated Program Analysis for Cybersecurity (APAC)](https://www.darpa.mil/program/automated-program-analysis-for-cybersecurity) program.
+Ben Holland is an <a href="#" class="hover-tooltip" tip="all but dissertation">ADB</a> PhD candidate at [Iowa State University](https://www.iastate.edu/) with experience working on two high profile DARPA projects. He has extensive experience writing program analyzers to detect novel and sophisticated malware in Android applications and served on the ISU team as a key analyst for [DARPA's Automated Program Analysis for Cybersecurity (APAC)](https://www.darpa.mil/program/automated-program-analysis-for-cybersecurity) program.
 
 His past work experience has been in research at [Iowa State University](https://www.iastate.edu/), mission assurance at [MITRE](https://www.mitre.org/), government systems at [Rockwell Collins](https://www.rockwellcollins.com/), and systems engineering at [Wabtec Railway Electronics](http://wabtec.com/).
 
