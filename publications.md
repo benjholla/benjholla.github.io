@@ -20,13 +20,17 @@ This page contains selected talks, papers, and other publications.
 <div class="abstract"><p>Materials and abstract coming soon.</p>
 </div>
 
+<a name="2018"></a>
+
+## 2018
+
+- <a name="Springer2018"></a>Suresh Kothari, Ganesh Santhanam, Benjamin Holland, Payas Awadhutkar, and Jon Mathews, Ahmed Tamrawi. **Catastrophic Cyber-Physical Malware.** *Springer Verlag Publishers*, April 2018.<br/>
+**Book Chapter:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>With the advent of highly sophisticated cyber-physical malware (CPM) such as Industroyer, a cyberattack could be as destructive as the terrorist attack on 9/11, it would virtually paralyze the nation. We discuss as the major risks the vulnerability of: telecommunication infrastructure, industrial control systems (ICS), and mission-critical software.</p><p>In differentiating CPM from traditional malware, the difference really comes from the open-ended possibilities for malware triggers resulting from the wide spectrum of sensor inputs, and the almost limitless application-specific possibilities for designing malicious payloads.</p><p>Fundamentally, the challenges of detecting sophisticated CPM stem from the complexities inherent in the software at the heart of cyber-physical systems. We discuss three fundamental challenges: explosion of execution behaviors, computational intractability of checking feasible behaviors, and difficult-to-analyze programing constructs.</p><p>In detecting novel CPM, the tasks are: developing plausible hypotheses for malware trigger and mali- cious payload, analyzing software to gather evidence based on CPM hypotheses, and verifying software to prove or refute a hypothesis based on the gathered evidence. We discuss research directions for effective automation to support these tasks.</p></div>
+
 <a name="2017"></a>
 
 ## 2017
-
-- <a name="ICISS2017"></a>Ganesh Ram Santhanam, Benjamin Holland, Suresh Kothari, Nikhil Ranade. **Human-on-the-loop Automation for Detecting Software Side-Channel Vulnerabilities.** *The 13th International Conference on Information System Security  [(ICISS 2017)](https://www.ee.iitb.ac.in/course/~iciss17/)*, Mumbai, India, December 2017.<br/>
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
-<div class="abstract"><p>Software side-channel vulnerabilities (SSCVs) allow an attacker to gather secrets by observing the differential in the time or space required for executing the program for different inputs. Detecting SSCVs is like searching for a needle in the haystack, not knowing what the needle looks like. Detecting SSCVs requires automation that supports systematic exploration to identify vulnerable code, formulation of plausible side-channel hypotheses, and gathering evidence to prove or refute each hypothesis. This paper describes human-on-the-loop automation to empower analysts to detect SSCVs. The proposed automation is founded on novel ideas for canonical side channel patterns, program artifact filters, and parameterized program graph models for efficient, accurate, and interactive program analyses. The detection process is exemplified through a case study. The paper also presents metrics that bring out the complexity of detecting SSCVs.</p></div>
 
 - <a name="APSEC2017"></a>Payas Awadhutkar, Ganesh Ram Santhanam, Benjamin Holland, Suresh Kothari. **Intelligence Amplifying Loop Characterizations for Detecting Algorithmic Complexity Vulnerabilities.** *The 24th Asia-Pacific Software Engineering Conference [(APSEC 2017)](http://www.apsec2017.org/)*, Nanjing, China, December 2017.<br/>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
