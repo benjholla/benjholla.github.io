@@ -11,10 +11,6 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
-- <a name="ICSE2018"></a>Benjamin Holland, Payas Awadhutkar, Suraj Kothari, Ahmed Tamrawi and Jon Mathews. **COMB: Computing Relevant Program Behaviors.** *The 40th International Conference on Software Engineering [(ICSE 2018)](https://www.icse2018.org/)*, Gothenburg, Sweden, May 2018.<br/>
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Paper](../papers/Computing_Relevant_Program_Behaviors.pdf)]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
-<div class="abstract"><p>The paper presents COMB, a tool to improve accuracy and efficiency of software engineering tasks that hinge on computing all relevant program behaviors.</p><p>Computing all behaviors and selecting the relevant ones is computationally intractable. COMB uses Projected Control Graph (PCG) abstraction to derive the relevant behaviors directly and efficiently. The PCG is important as the number of behaviors relevant to a task is often significantly smaller than the totality of behaviors.</p><p>COMB provides extensive capabilities for program comprehension, analysis, and verification. We present a basic case study and a Linux verification study to demonstrate various capabilities of COMB and the addressed challenges. COMB is designed to support multiple programming languages. We demonstrate it for C and Java.</p></div>
-
 - <a name="ISEA2018"></a>Benjamin Holland. **Cyber Security Awareness and Cyber Security Challenge Competition.** *ISEA II Bilateral / International Cooperation*, MNIT, Jaipur, India, July 2018.<br/>
 **Seminar:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
 <div class="abstract"><p>Materials and abstract coming soon.</p>
@@ -28,6 +24,10 @@ This page contains selected talks, papers, and other publications.
 <a name="2018"></a>
 
 ## 2018
+
+- <a name="ICSE2018"></a>Benjamin Holland, Payas Awadhutkar, Suraj Kothari, Ahmed Tamrawi and Jon Mathews. **COMB: Computing Relevant Program Behaviors.** *The 40th International Conference on Software Engineering [(ICSE 2018)](https://www.icse2018.org/)*, Gothenburg, Sweden, May 2018.<br/>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Paper](../papers/Computing_Relevant_Program_Behaviors.pdf)]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
+<div class="abstract"><p>The paper presents COMB, a tool to improve accuracy and efficiency of software engineering tasks that hinge on computing all relevant program behaviors.</p><p>Computing all behaviors and selecting the relevant ones is computationally intractable. COMB uses Projected Control Graph (PCG) abstraction to derive the relevant behaviors directly and efficiently. The PCG is important as the number of behaviors relevant to a task is often significantly smaller than the totality of behaviors.</p><p>COMB provides extensive capabilities for program comprehension, analysis, and verification. We present a basic case study and a Linux verification study to demonstrate various capabilities of COMB and the addressed challenges. COMB is designed to support multiple programming languages. We demonstrate it for C and Java.</p></div>
 
 - <a name="Springer2018"></a>Suresh Kothari, Ganesh Santhanam, Benjamin Holland, Payas Awadhutkar, and Jon Mathews, Ahmed Tamrawi. **Catastrophic Cyber-Physical Malware.** *Springer Verlag Publishers*, April 2018.<br/>
 **Book Chapter:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
