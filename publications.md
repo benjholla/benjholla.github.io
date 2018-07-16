@@ -11,11 +11,6 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
-- <a name="ISEA2018"></a>Benjamin Holland. **Cyber Security Awareness and Cyber Security Challenge Competition.** *ISEA II Bilateral / International Cooperation*, MNIT, Jaipur, India, July 2018.<br/>
-**Seminar:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
-<div class="abstract"><p>Materials and abstract coming soon.</p>
-</div>
-
 - <a name="USCC2018"></a>Benjamin Holland. **Program Analysis for Cybersecurity II.** *US Cyber Challenge Summer Bootcamps [(USCC 2018)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, and Nevada, June-August 2018.<br/>
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
 <div class="abstract"><p>From bug hunting to exploit development to securing software systems, program analysis is a common thread that ties together multiple fields of software security. This training is targeted at individuals with little or no program analysis experience. Instead of simply learning how to break things, this training focuses on the challenges involved in securing software systems and developing a systematic approach to tackling ongoing software security challenges. The material is broken into 6 modules that cover both defensive and offensive aspects of security.</p>
@@ -38,6 +33,18 @@ This page contains selected talks, papers, and other publications.
 <a name="2018"></a>
 
 ## 2018
+
+- <a name="ISEA2018"></a>Benjamin Holland. **Cyber Security Awareness and Cyber Security Challenge Competition.** *ISEA II Bilateral / International Cooperation*, MNIT, Jaipur, India, July 2018.<br/>
+**Seminar:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/PACSeminar2018)]
+<div class="abstract">
+<ul>
+<li>Day 1: Binary Exploitation</li>
+<li>Day 2: Web Security</li>
+<li>Day 3: Program Analysis</li>
+<li>Day 2: Bug Hunting</li>
+<li>Day 5: Cybersecurity Competition</li>
+</ul>
+</div>
 
 - <a name="ICSE2018"></a>Benjamin Holland, Payas Awadhutkar, Suraj Kothari, Ahmed Tamrawi and Jon Mathews. **COMB: Computing Relevant Program Behaviors.** *The 40th International Conference on Software Engineering [(ICSE 2018)](https://www.icse2018.org/)*, Gothenburg, Sweden, May 2018.<br/>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Paper](../papers/Computing_Relevant_Program_Behaviors.pdf)]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
