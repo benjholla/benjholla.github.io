@@ -37,7 +37,7 @@ This page contains selected talks, papers, and other publications.
 - <a name="ISEA2018"></a>Benjamin Holland. **Cyber Security Awareness and Cyber Security Challenge Competition.** *ISEA II Bilateral / International Cooperation*, MNIT, Jaipur, India, July 2018.<br/>
 **Seminar:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/PACSeminar2018)]
 <div class="abstract">
-<ul>
+<ul style="list-style-type: none;">
 <li>Day 1: Binary Exploitation</li>
 <li>Day 2: Web Security</li>
 <li>Day 3: Program Analysis</li>
