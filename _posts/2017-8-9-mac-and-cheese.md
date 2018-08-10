@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Ultimate Mac and Cheese Bake
+title: Ultimate Macaroni and Cheese Bake
 draft: false
 ---
 
-This blog post details a recipe I have been refining for what I believe to be the ultimate Mac and Cheese dish.
+This blog post details a recipe I have been refining for what I believe to be the ultimate macaroni and cheese dish.
 
 ## Inspiration
 
-It all started one day when I picked up a [Cracker Barrel brand Baked Macaroni and Cheese kit](https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Cracker+Barrel+brand+Baked+Macaroni+and+Cheese), which is basically just a fancy version of the standard [Velveeta macaroni and cheese dinner](https://www.amazon.com/s/?ref=nb_sb_ss_i_3_3?url=search-alias%3Dgrocery&field-keywords=velvetta+mac+and+cheese). The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the mac and cheese dish.
+It all started one day when I picked up a [Cracker Barrel brand Baked Macaroni and Cheese kit](https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Cracker+Barrel+brand+Baked+Macaroni+and+Cheese), which is basically just a fancy version of the standard [Velveeta macaroni and cheese dinner](https://www.amazon.com/s/?ref=nb_sb_ss_i_3_3?url=search-alias%3Dgrocery&field-keywords=velvetta+mac+and+cheese). The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the macaroni and cheese dish.
 
 <p>
   <center>
-    <a href="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" data-lightbox="inspiration" data-title="Insipiration">
-      <img src="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" alt="Cracker Barrel Oven Bake Kit" />
-      <figcaption>Cracker Barrel brand Baked Macaroni and Cheese kit</figcaption>
+    <a href="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" data-lightbox="inspiration" data-title="Cracker Barrel Baked Macaroni and Cheese kit">
+      <img src="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" alt="Cracker Barrel Baked Macaroni and Cheese kit" />
+      <figcaption>Inspiration</figcaption>
     </a>
     <a href="/images/posts/mac-and-cheese/Velveeta.jpg" data-lightbox="inspiration" data-title="Velveeta Shells and Cheese"></a>
   </center>
@@ -59,7 +59,10 @@ In the cast iron pan (or optionally a separate no stick stir fry pan) melt butte
 I try to time step 4 so that step 2 is completed (chicken is chopped) and steps 1 (bacon is diced) and 3 (mushrooms are sauteed) are nearly done. Bring a pot of salted water to boil. Cook both boxes of Macaroni and Cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
 
 ### 5) Combine and Bake Again
-In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread the all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack for 10 minutes or until the cheese topping is melted and golden brown.
+In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack for 10 minutes or until the cheese topping is melted and golden brown.
 
 ### 6) Serve
-Remove the macaroni and cheese bake from the oven and let cool for 5-10 minutes. Allowing the bake to cool will make it easier to serve and readily enjoy. To serve, use a metal frying pan spatula to cut a slice and scoop onto a wide salad bowl. For the adventurous palate, a generous dollop of spicy guacamole on top truly completes the dish. The dish pairs well with a bold red wine, dark stout or porter beer, or even citrus drinks such as a gin and tonic with lime. A dessert that pairs well follows the theme of rich indulgence and cast iron to make [indoor smores](http://www.lodgemfg.com/recipe/skillet-smores-dip) or a [skillet chocolate chip cookie](http://www.lodgemfg.com/recipe/cast-iron-skillet-chocolate-chip-cookie) with vanilla ice cream. Finally, if there are left overs the remainder can be reheated in the cast iron pan again covering the top with tin foil and baking until reheated or microwaved. Both techniques reheat very well.
+Remove the macaroni and cheese bake from the oven and let cool for 5-10 minutes. Allowing the bake to cool will make it easier to serve and readily enjoy. To serve, use a metal frying pan spatula to cut a slice and scoop onto a wide salad bowl. For the adventurous palate, a generous dollop of spicy guacamole on top truly completes the dish. 
+
+### Food Pairings
+The dish pairs well with a bold red wine, dark stout or porter beer, or even citrus drinks such as a gin and tonic with lime. A dessert that pairs well follows the theme of rich indulgence and cast iron to make [indoor smores](http://www.lodgemfg.com/recipe/skillet-smores-dip) or a [skillet chocolate chip cookie](http://www.lodgemfg.com/recipe/cast-iron-skillet-chocolate-chip-cookie) with vanilla ice cream. Finally, if there are left overs the remainder can be reheated in the cast iron pan again covering the top with tin foil and baking until reheated or microwaved. Both techniques reheat very well.
