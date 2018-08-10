@@ -64,7 +64,7 @@ In the cast iron pan (or optionally a separate no stick stir fry pan) melt butte
 ### 4) Boil
 I try to time step 4 so that step 2 is completed (chicken is chopped) and steps 1 (bacon is diced) and 3 (mushrooms are sauteed) are nearly done. 
 
-Bring a pot of salted water to boil. Cook both boxes of Macaroni and Cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
+Bring a pot of salted water to boil. Cook both boxes of macaroni and cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
 
 ### 5) Combine and Bake Again
 In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack for 10 minutes or until the cheese topping is melted and golden brown.
