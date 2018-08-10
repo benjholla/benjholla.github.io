@@ -59,7 +59,7 @@ Blacken chicken on grill, grilling each side for 3-4 minutes until cook through.
 In the meantime move to step 3.
 
 ### 3) Saute
-In the cast iron pan (or optionally a separate no stick stir fry pan) melt butter and add chopped mushrooms.  Season with sea salt, ground pepper, and the chipotle with blend of southwest pepper flakes. After 3-5 minutes on medium-high heat add minced garlic and cook until the excess water content in the mushrooms starts to dissipate and mushrooms are lightly browned.
+In the cast iron pan (or optionally a separate no stick frying pan) melt butter and add chopped mushrooms.  Season with sea salt, ground pepper, and the chipotle with blend of southwest pepper flakes. After 3-5 minutes on medium-high heat add minced garlic and cook until the excess water content in the mushrooms starts to dissipate and mushrooms are lightly browned.
 
 ### 4) Boil
 I try to time step 4 so that step 2 is completed (chicken is chopped) and step 1 (bacon is diced) and step 3 (mushrooms are sauteed) are nearly done. 
