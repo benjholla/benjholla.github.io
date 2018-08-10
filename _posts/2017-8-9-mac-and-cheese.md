@@ -51,7 +51,7 @@ Once the oven is preheated, place the bacon in the lower rack of the oven. Bake 
 
 In the meantime begin step 2. 
 
-The bacon should be firm and even slightly crispy on edges but not brittle. Leave the oven preheated to 350 degrees and pour off the bacon grease from the pan before transferring bacon onto plate covered in paper towels. Once cool pat dry to remove any excess bacon grease remaining. Once bacon is cool, dice the bacon into bacon bits.
+The bacon should be firm and even slightly crispy on edges but not brittle. Leave the oven preheated to 350 degrees and pour off the bacon grease from the pan before transferring bacon onto plate covered in paper towels. Once cool pat dry to remove any excess bacon grease remaining. Dice the bacon into bacon bits.
 
 ### 2) Grill
 Blacken chicken on grill, grilling each side for 3-4 minutes until cook through. Remove from grill and allow chicken to rest for 10 minutes before dicing chicken into half inch size bites. 
@@ -62,15 +62,15 @@ In the meantime move to step 3.
 In the cast iron pan (or optionally a separate no stick stir fry pan) melt butter and add chopped mushrooms.  Season with sea salt, ground pepper, and the chipotle with blend of southwest pepper flakes. After 3-5 minutes on medium-high heat add minced garlic and cook until the excess water content in the mushrooms starts to dissipate and mushrooms are lightly browned.
 
 ### 4) Boil
-I try to time step 4 so that step 2 is completed (chicken is chopped) and steps 1 (bacon is diced) and 3 (mushrooms are sauteed) are nearly done. 
+I try to time step 4 so that step 2 is completed (chicken is chopped) and step 1 (bacon is diced) and step 3 (mushrooms are sauteed) are nearly done. 
 
 Bring a pot of salted water to boil. Cook both boxes of macaroni and cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
 
 ### 5) Combine and Bake Again
-In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack for 10 minutes or until the cheese topping is melted and golden brown.
+In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack until the cheese topping is fully melted (about 10 minutes).
 
 ### 6) Serve
 Remove the macaroni and cheese bake from the oven and let cool for 5-10 minutes. Allowing the bake to cool will make it easier to serve and readily enjoy. To serve, use a metal frying pan spatula to cut a slice and scoop onto a wide salad bowl. For the adventurous palate, a generous dollop of spicy guacamole on top truly completes the dish. 
 
 ### Food Pairings
-The dish pairs well with a bold red wine, dark stout or porter beer, or even citrus drinks such as a gin and tonic with lime. A dessert that pairs well follows the theme of rich indulgence and cast iron to make [indoor smores](http://www.lodgemfg.com/recipe/skillet-smores-dip) or a [skillet chocolate chip cookie](http://www.lodgemfg.com/recipe/cast-iron-skillet-chocolate-chip-cookie) with vanilla ice cream. Finally, if there are left overs the remainder can be reheated in the cast iron pan again covering the top with tin foil and baking until reheated or microwaved. Both techniques reheat very well.
+The dish pairs well with a bold red wine, [dark stout beer](/BrewLog/oatmeal-stout/), [brown ale](/BrewLog/brushfire-smoked-brown-ale/), or even citrus drinks such as a <a href="#" class="hover-tooltip" tip="Place 1 bartender’s ice cube in a whiskey glass. Fill the glass to the top of the ice cube with Hendrick’s gin. Squeeze the juice of a quarter of a lime into the glass and garnish with the wedge. Top off the glass with Schweppes tonic water. Enjoy responsibly.">gin and tonic with lime</a>. A dessert that pairs well follows the theme of rich indulgence and cast iron to make [indoor smores](http://www.lodgemfg.com/recipe/skillet-smores-dip) or a [skillet chocolate chip cookie](http://www.lodgemfg.com/recipe/cast-iron-skillet-chocolate-chip-cookie) with vanilla ice cream. Finally, if there are leftovers the remainder can be reheated in the microwave or even in the cast iron pan again covering the top with tin foil and baking until reheated. The dish reheats well either way.
