@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Ultimate Mac and Cheese Bake
-draft: true
+draft: false
 ---
 
 This blog post details a recipe I have been refining for what I believe to be the ultimate Mac and Cheese dish.
 
 ## Inspiration
 
-It all started about a year ago when I picked up a [Cracker Barrel brand Baked Macaroni and Cheese kit](https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Cracker+Barrel+brand+Baked+Macaroni+and+Cheese), which is basically just a fancy version of the standard [Velveeta macaroni and cheese dinner](https://www.amazon.com/s/?ref=nb_sb_ss_i_3_3?url=search-alias%3Dgrocery&field-keywords=velvetta+mac+and+cheese). The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the mac and cheese dish.
+It all started one day when I picked up a [Cracker Barrel brand Baked Macaroni and Cheese kit](https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Cracker+Barrel+brand+Baked+Macaroni+and+Cheese), which is basically just a fancy version of the standard [Velveeta macaroni and cheese dinner](https://www.amazon.com/s/?ref=nb_sb_ss_i_3_3?url=search-alias%3Dgrocery&field-keywords=velvetta+mac+and+cheese). The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the mac and cheese dish.
 
 <p>
   <center>
