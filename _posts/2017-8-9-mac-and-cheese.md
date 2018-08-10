@@ -8,13 +8,13 @@ This blog post details a recipe I have been refining for what I believe to be th
 
 ## Inspiration
 
-It all started one day when I picked up a [Cracker Barrel brand Baked Macaroni and Cheese kit](https://www.amazon.com/s/?ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=Cracker+Barrel+brand+Baked+Macaroni+and+Cheese), which is basically just a fancy version of the standard [Velveeta macaroni and cheese dinner](https://www.amazon.com/s/?ref=nb_sb_ss_i_3_3?url=search-alias%3Dgrocery&field-keywords=velvetta+mac+and+cheese). The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the macaroni and cheese dish.
+It all started one day when I picked up a Cracker Barrel brand Baked Macaroni and Cheese kit, which is basically just a fancy version of the standard Velveeta macaroni and cheese dinner. The breadcrumbs and garlic seasoning were a nice touch, but what really got me thinking was the idea of baking the macaroni and cheese dish.
 
 <p>
   <center>
     <a href="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" data-lightbox="inspiration" data-title="Cracker Barrel Baked Macaroni and Cheese kit">
       <img src="/images/posts/mac-and-cheese/CrackerBarrelOvenBake.png" alt="Cracker Barrel Baked Macaroni and Cheese kit" />
-      <figcaption>Inspiration</figcaption>
+      <figcaption>Inspiration (click to view album)</figcaption>
     </a>
     <a href="/images/posts/mac-and-cheese/Velveeta.jpg" data-lightbox="inspiration" data-title="Velveeta Shells and Cheese"></a>
   </center>
