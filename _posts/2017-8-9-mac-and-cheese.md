@@ -47,16 +47,24 @@ For this recipe you will need:
 Preheat oven to 350 degrees. Light grill and allow to heat up. Wash, dry, stem, and chop mushrooms. Mince garlic. Trim fat and slice chicken breasts into strips, seasoning with chipotle powder. Place bacon spread evenly on a baking sheet.
 
 ### 1) Bake
-Once the oven is preheated, place the bacon in the lower rack of the oven. Bake until bacon starts to crisp on the edges (around 20-25 minutes). In the meantime begin step 2. The bacon should be firm and even slightly crispy on edges but not brittle. Leave the oven preheated to 350 degrees and pour off the bacon grease from the pan before transferring bacon onto plate covered in paper towels. Once cool pat dry to remove any excess bacon grease remaining. Once bacon is cool, dice the bacon into bacon bits.
+Once the oven is preheated, place the bacon in the lower rack of the oven. Bake until bacon starts to crisp on the edges (around 20-25 minutes). 
+
+In the meantime begin step 2. 
+
+The bacon should be firm and even slightly crispy on edges but not brittle. Leave the oven preheated to 350 degrees and pour off the bacon grease from the pan before transferring bacon onto plate covered in paper towels. Once cool pat dry to remove any excess bacon grease remaining. Once bacon is cool, dice the bacon into bacon bits.
 
 ### 2) Grill
-Blacken chicken on grill, grilling each side for 3-4 minutes until cook through. Remove from grill and allow chicken to rest for 10 minutes before dicing chicken into half inch size bites. In the meantime move to step 3.
+Blacken chicken on grill, grilling each side for 3-4 minutes until cook through. Remove from grill and allow chicken to rest for 10 minutes before dicing chicken into half inch size bites. 
+
+In the meantime move to step 3.
 
 ### 3) Saute
 In the cast iron pan (or optionally a separate no stick stir fry pan) melt butter and add chopped mushrooms.  Season with sea salt, ground pepper, and the chipotle with blend of southwest pepper flakes. After 3-5 minutes on medium-high heat add minced garlic and cook until the excess water content in the mushrooms starts to dissipate and mushrooms are lightly browned.
 
 ### 4) Boil
-I try to time step 4 so that step 2 is completed (chicken is chopped) and steps 1 (bacon is diced) and 3 (mushrooms are sauteed) are nearly done. Bring a pot of salted water to boil. Cook both boxes of Macaroni and Cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
+I try to time step 4 so that step 2 is completed (chicken is chopped) and steps 1 (bacon is diced) and 3 (mushrooms are sauteed) are nearly done. 
+
+Bring a pot of salted water to boil. Cook both boxes of Macaroni and Cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
 
 ### 5) Combine and Bake Again
 In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack for 10 minutes or until the cheese topping is melted and golden brown.
