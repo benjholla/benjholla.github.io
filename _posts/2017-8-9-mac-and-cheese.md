@@ -44,7 +44,7 @@ For this recipe you will need:
 - *Optional*: Spicy guacamole topping
 
 ### Preparation
-Preheat oven to 350 degrees. Light grill and allow to heat up. Wash, dry, stem, and chop mushrooms. Mince garlic. Trim fat and slice chicken breasts into strips, seasoning with chipotle powder. Place bacon spread evenly on a baking sheet.
+Preheat oven to 350 degrees. Light grill and allow to heat up. Wash, dry, stem, and chop mushrooms. Mince garlic. Trim fat and slice chicken breasts into strips, seasoning with chipotle powder. Place bacon spread evenly on a baking pan.
 
 ### 1) Bake
 Once the oven is preheated, place the bacon in the lower rack of the oven. Bake until bacon starts to crisp on the edges (around 20-25 minutes). 
@@ -64,7 +64,7 @@ In the cast iron pan (or optionally a separate no stick stir fry pan) melt butte
 ### 4) Boil
 I try to time step 4 so that step 2 is completed (chicken is chopped) and step 1 (bacon is diced) and step 3 (mushrooms are sauteed) are nearly done. 
 
-Bring a pot of salted water to boil. Cook both boxes of macaroni and cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
+Bring a pot of salted water to boil in the large pot. Cook both boxes of macaroni and cheese according to the package directions (10-12 minutes) and straining. Do not rinse noodles. After straining add milk and cheese packets. The milk will give the macaroni a little extra moisture so that its not too dry after combining the dry ingredients and additional baking.
 
 ### 5) Combine and Bake Again
 In a large mixing bowl, stir together the macaroni and cheese, chicken, bacon, and mushrooms. Carefully transfer the contents of the mixing bowl into the cast iron pan, tightly packing the bottom layer. Evenly spread all of the shredded cheese over the top of the macaroni and cheese bake in the cast iron pan and top with a light seasoning of ground pepper. Bake in oven on center rack until the cheese topping is fully melted (about 10 minutes).
