@@ -11,13 +11,8 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
-- <a name="DySDoc3"></a>Ahmed Tamrawi, Sharwan Ram, Payas Awadhutkar, Benjamin Holland, Ganesh Ram Santhanam, Suresh Kothari. **DynaDoc: Automated On-Demand Context-Specific Documentation.** *[Third International Workshop on Dynamic Software Documentation (DySDoc3)](https://dysdoc.github.io/dysdoc3)*, Madrid, Spain, September 2018.<br/>
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
-<div class="abstract"><p>This 2018 DOCGEN Challenge paper describes DynaDoc, an automated documentation system for on-demand context-specific documentation. A key novelty is the use of graph database technology with an eXtensible Common Software Graph Schema (XCSG). Using XCSG-based query language, DynaDoc can mine efficiently and accurately a variety of program artifacts and graph abstractions from millions of lines of code to provide semantically relevant and rich documentation. DynaDoc leverages the extensibility of XCSG to incorporate information about commits, issues, and other supplementary artifacts and links that information to program artifacts.</p>
-</div>
-
 - <a name="SecDSM2018"></a>Benjamin Holland. **Recent Trends in Program Analysis for Bug Hunting and Exploitation.** *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, September 2018.<br/>
-**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]
 <div class="abstract"><p>Software is pervasive, and for better or worse, it now controls most of daily lives. Developing and maintaining secure software is of the upmost importance, but it seems that despite our best efforts we just haven’t gotten it right yet. More importantly we should ask ourselves why haven’t we solved this problem yet? This talk summarizes classical program analysis as well as recent program analysis techniques without all the fancy jargon. As case studies, we examine a few of DARPA’s high-profile software security programs and read between the lines to see where the field is going. Is your job in computer security going to be replaced by machines armed with theorem provers or will humans always have a role to play? Come join in the discussion.</p>
 </div>
 
@@ -31,6 +26,11 @@ This page contains selected talks, papers, and other publications.
 <a name="2018"></a>
 
 ## 2018
+
+- <a name="DySDoc3"></a>Ahmed Tamrawi, Sharwan Ram, Payas Awadhutkar, Benjamin Holland, Ganesh Ram Santhanam, Suresh Kothari. **DynaDoc: Automated On-Demand Context-Specific Documentation.** *[Third International Workshop on Dynamic Software Documentation (DySDoc3)](https://dysdoc.github.io/dysdoc3)*, Madrid, Spain, September 2018.<br/>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
+<div class="abstract"><p>This 2018 DOCGEN Challenge paper describes DynaDoc, an automated documentation system for on-demand context-specific documentation. A key novelty is the use of graph database technology with an eXtensible Common Software Graph Schema (XCSG). Using XCSG-based query language, DynaDoc can mine efficiently and accurately a variety of program artifacts and graph abstractions from millions of lines of code to provide semantically relevant and rich documentation. DynaDoc leverages the extensibility of XCSG to incorporate information about commits, issues, and other supplementary artifacts and links that information to program artifacts.</p>
+</div>
 
 - <a name="USCC2018"></a>Benjamin Holland. **Program Analysis for Cybersecurity II.** *US Cyber Challenge Summer Bootcamps [(USCC 2018)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, and Nevada, June-August 2018.<br/>
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
