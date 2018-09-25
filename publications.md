@@ -11,11 +11,6 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
-- <a name="SecDSM2018"></a>Benjamin Holland. **Recent Trends in Program Analysis for Bug Hunting and Exploitation.** *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, September 2018.<br/>
-**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]
-<div class="abstract"><p>Software is pervasive, and for better or worse, it now controls most of daily lives. Developing and maintaining secure software is of the upmost importance, but it seems that despite our best efforts we just haven’t gotten it right yet. More importantly we should ask ourselves why haven’t we solved this problem yet? This talk summarizes classical program analysis as well as recent program analysis techniques without all the fancy jargon. As case studies, we examine a few of DARPA’s high-profile software security programs and read between the lines to see where the field is going. Is your job in computer security going to be replaced by machines armed with theorem provers or will humans always have a role to play? Come join in the discussion.</p>
-</div>
-
 - <a name="MILCOM2018"></a>Suresh Kothari, Benjamin Holland. **Systematic Exploration of Critical Software for Catastrophic Cyber-Physical Malware.** *[MILCOM 2018](http://events.afcea.org/milcom18/public/enter.aspx)*, Los Angeles, California, October 2018.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](#)]
 <div class="abstract"><p>With the advent of highly sophisticated cyber-physical malware (CPM), a cyber-attack can cripple critical services virtually paralyze the nation. In differentiating CPM from traditional malware, the difference really comes from the open-ended possibilities for malware triggers resulting from the wide spectrum of sensor inputs, and the almost limitless application-specific possibilities for designing malicious payloads.</p>
@@ -26,6 +21,11 @@ This page contains selected talks, papers, and other publications.
 <a name="2018"></a>
 
 ## 2018
+
+- <a name="SecDSM2018"></a>Benjamin Holland. **Recent Trends in Program Analysis for Bug Hunting and Exploitation.** *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, September 2018.<br/>
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]
+<div class="abstract"><p>Software is pervasive, and for better or worse, it now controls most of daily lives. Developing and maintaining secure software is of the upmost importance, but it seems that despite our best efforts we just haven’t gotten it right yet. More importantly we should ask ourselves why haven’t we solved this problem yet? This talk summarizes classical program analysis as well as recent program analysis techniques without all the fancy jargon. As case studies, we examine a few of DARPA’s high-profile software security programs and read between the lines to see where the field is going. Is your job in computer security going to be replaced by machines armed with theorem provers or will humans always have a role to play? Come join in the discussion.</p>
+</div>
 
 - <a name="DySDoc3"></a>Ahmed Tamrawi, Sharwan Ram, Payas Awadhutkar, Benjamin Holland, Ganesh Ram Santhanam, Suresh Kothari. **DynaDoc: Automated On-Demand Context-Specific Documentation.** *[Third International Workshop on Dynamic Software Documentation (DySDoc3)](https://dysdoc.github.io/dysdoc3)*, Madrid, Spain, September 2018.<br/>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
