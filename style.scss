@@ -259,6 +259,18 @@ nav {
   }
 }
 
+// superscript
+sup { 
+    vertical-align: super;
+    font-size: smaller;
+}
+
+// subscript
+sub { 
+    vertical-align: sub;
+    font-size: smaller;
+}
+
 // code snippets
 // code styling
 blockquote {
