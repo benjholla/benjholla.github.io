@@ -28,7 +28,7 @@ This page contains selected talks, papers, and other publications.
 </div>
 
 - <a name="DySDoc3"></a>Ahmed Tamrawi, Sharwan Ram, Payas Awadhutkar, Benjamin Holland, Ganesh Ram Santhanam, Suresh Kothari. **DynaDoc: Automated On-Demand Context-Specific Documentation.** *[Third International Workshop on Dynamic Software Documentation (DySDoc3)](https://dysdoc.github.io/dysdoc3)*, Madrid, Spain, September 2018.<br/>
-<sup style="vertical-align: super; font-size: smaller;">&#10025;&nbsp;[Winner of the 2018 DOCGEN challenge comprehesiveness category!](https://dysdoc.github.io/dysdoc3/)</sup>
+<sup style="vertical-align: super; font-size: smaller;">&#10025;&nbsp;[Winner of the 2018 DOCGEN challenge comprehesiveness category!](https://dysdoc.github.io/dysdoc3/#section-program)</sup>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[DynaDoc](https://github.com/EnSoftCorp/DynaDoc)]&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
 <div class="abstract"><p>This 2018 DOCGEN Challenge paper describes DynaDoc, an automated documentation system for on-demand context-specific documentation. A key novelty is the use of graph database technology with an eXtensible Common Software Graph Schema (XCSG). Using XCSG-based query language, DynaDoc can mine efficiently and accurately a variety of program artifacts and graph abstractions from millions of lines of code to provide semantically relevant and rich documentation. DynaDoc leverages the extensibility of XCSG to incorporate information about commits, issues, and other supplementary artifacts and links that information to program artifacts.</p>
 </div>
