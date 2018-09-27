@@ -28,8 +28,8 @@ This page contains selected talks, papers, and other publications.
 </div>
 
 - <a name="DySDoc3"></a>Ahmed Tamrawi, Sharwan Ram, Payas Awadhutkar, Benjamin Holland, Ganesh Ram Santhanam, Suresh Kothari. **DynaDoc: Automated On-Demand Context-Specific Documentation.** *[Third International Workshop on Dynamic Software Documentation (DySDoc3)](https://dysdoc.github.io/dysdoc3)*, Madrid, Spain, September 2018.<br/>
-*[Winner of the 2018 DOCGEN challenge comprehesiveness category](https://dysdoc.github.io/dysdoc3/)
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[DynaDoc Tool]](https://github.com/EnSoftCorp/DynaDoc)&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
+*<sup>Winner of the [2018 DOCGEN challenge comprehesiveness category](https://dysdoc.github.io/dysdoc3/)!</sup>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[DynaDoc](https://github.com/EnSoftCorp/DynaDoc)]&nbsp;[[Sample Output](https://ensoftcorp.github.io/DynaDoc/)]
 <div class="abstract"><p>This 2018 DOCGEN Challenge paper describes DynaDoc, an automated documentation system for on-demand context-specific documentation. A key novelty is the use of graph database technology with an eXtensible Common Software Graph Schema (XCSG). Using XCSG-based query language, DynaDoc can mine efficiently and accurately a variety of program artifacts and graph abstractions from millions of lines of code to provide semantically relevant and rich documentation. DynaDoc leverages the extensibility of XCSG to incorporate information about commits, issues, and other supplementary artifacts and links that information to program artifacts.</p>
 </div>
 
@@ -57,7 +57,7 @@ This page contains selected talks, papers, and other publications.
 </div>
 
 - <a name="ICSE2018"></a>Benjamin Holland, Payas Awadhutkar, Suresh Kothari, Ahmed Tamrawi and Jon Mathews. **COMB: Computing Relevant Program Behaviors.** *The 40th International Conference on Software Engineering [(ICSE 2018)](https://www.icse2018.org/)*, Gothenburg, Sweden, May 2018.<br/>
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Toolbox]](https://ensoftcorp.github.io/pcg-toolbox/)&nbsp;[[Paper](../papers/Computing_Relevant_Program_Behaviors.pdf)]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Toolbox](https://ensoftcorp.github.io/pcg-toolbox/)]&nbsp;[[Paper](../papers/Computing_Relevant_Program_Behaviors.pdf)]&nbsp;[<a href="https://youtu.be/YoOJ7avBIdk">Video</a>]
 <div class="abstract"><p>The paper presents COMB, a tool to improve accuracy and efficiency of software engineering tasks that hinge on computing all relevant program behaviors.</p><p>Computing all behaviors and selecting the relevant ones is computationally intractable. COMB uses Projected Control Graph (PCG) abstraction to derive the relevant behaviors directly and efficiently. The PCG is important as the number of behaviors relevant to a task is often significantly smaller than the totality of behaviors.</p><p>COMB provides extensive capabilities for program comprehension, analysis, and verification. We present a basic case study and a Linux verification study to demonstrate various capabilities of COMB and the addressed challenges. COMB is designed to support multiple programming languages. We demonstrate it for C and Java.</p></div>
 
 - <a name="Springer2018"></a>Suresh Kothari, Ganesh Santhanam, Benjamin Holland, Payas Awadhutkar, and Jon Mathews, Ahmed Tamrawi. **Catastrophic Cyber-Physical Malware.** *Springer Verlag Publishers*, April 2018.<br/>
