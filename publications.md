@@ -23,7 +23,7 @@ This page contains selected talks, papers, and other publications.
 ## 2018
 
 - <a name="SecDSM2018"></a>Benjamin Holland. **Recent Trends in Program Analysis for Bug Hunting and Exploitation.** *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, September 2018.<br/>
-**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]&nbsp;[[Video](https://www.youtube.com/watch?v=bL0oJsinqP0)]
 <div class="abstract"><p>Software is pervasive, and for better or worse, it now controls most of daily lives. Developing and maintaining secure software is of the upmost importance, but it seems that despite our best efforts we just haven’t gotten it right yet. More importantly we should ask ourselves why haven’t we solved this problem yet? This talk summarizes classical program analysis as well as recent program analysis techniques without all the fancy jargon. As case studies, we examine a few of DARPA’s high-profile software security programs and read between the lines to see where the field is going. Is your job in computer security going to be replaced by machines armed with theorem provers or will humans always have a role to play? Come join in the discussion.</p>
 </div>
 
