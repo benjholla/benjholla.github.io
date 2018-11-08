@@ -11,16 +11,23 @@ This page contains selected talks, papers, and other publications.
 
 ## Upcoming
 
+- <a name="PHDThesis"></a>Benjamin Holland. **Computing homomorphic program invariants.** *[Iowa State University](https://www.iastate.edu/)*, Ames, Iowa, November 2018.<br/>
+**PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>Program invariants are properties that are true at a particular program point or points. Program invariants are often undocumented assertions made by a programmer that hold the key to reasoning correctly about a software verification task. Unlike the contemporary research in which program invariants are defined to hold for all control flow paths, we propose <i>homomorphic program invariants</i> that hold only on the relevant subsets of paths that are defined with respect to a problem. For a problem-specific task, homomorphic program invariants can form stricter assertions that are arguably more useful to a specific analysis task.</p>
+<p>Towards our goal of computing homomorphic program invariants we deal with the challenge of the astronomical number of paths in programs. Since reasoning about a class of program paths must be efficient in order to scale to real world programs, we present a technique that implements prior work to efficiently divide program paths into equivalence classes with respect to control flow events of interest. We extend further extend prior work by handling inter-procedural paths, and then use the results to determine how to modify a program binary to abort execution at the start of an irrelevant program path. With off-the-shelf components, we employ the state-of-the-art in fuzzing and dynamic invariant detection tools to mine homomorphic program invariants.</p> 
+<p>To aid in the task of identifying likely software anomalies, we developed human-in-the-loop analysis methodologies and a toolbox of human-centric static analysis tools. We present work to perform a statically-informed dynamic analysis to efficiently transition from static analysis to dynamic analysis and leverage the strengths of each approach. To evaluate our approach, we apply our techniques to three case study audits of challenge applications from DARPA's Space/Time Analysis for Cybersecurity (STAC) program. In the final case study, we discover an unintentional vulnerability that causes a denial of service (DoS) in space and time, despite the challenge application having been hardened against static and dynamic analysis techniques.</p>
+</div>
+
+<a name="2018"></a>
+
+## 2018
+
 - <a name="MILCOM2018"></a>Suresh Kothari, Benjamin Holland. **Systematic Exploration of Critical Software for Catastrophic Cyber-Physical Malware.** *[MILCOM 2018](http://events.afcea.org/milcom18/public/enter.aspx)*, Los Angeles, California, October 2018.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/MILCOM2018)]
 <div class="abstract"><p>With the advent of highly sophisticated cyber-physical malware (CPM), a cyber-attack can cripple critical services virtually paralyze the nation. In differentiating CPM from traditional malware, the difference really comes from the open-ended possibilities for malware triggers resulting from the wide spectrum of sensor inputs, and the almost limitless application-specific possibilities for designing malicious payloads.</p>
 <p>Fundamentally, the challenges of detecting sophisticated CPM stem from the complexities inherent in the software at the heart of cyber-physical systems. We discuss three fundamental challenges: explosion of execution behaviors, computational intractability of checking feasible behaviors, and difficult-to-analyze programming constructs. For each challenge we present a systematic methodology for auditing and verifying software.</p>
 <p>In detecting novel CPM, the tasks are: developing plausible hypotheses for malware trigger and malicious payload, analyzing software to gather evidence based on CPM hypotheses, and verifying software to prove or refute a hypothesis based on the gathered evidence. We discuss research directions for effective automation to support these tasks and with audience participating we will demonstrate visual techniques for exploring software.</p>
 </div>
-
-<a name="2018"></a>
-
-## 2018
 
 - <a name="SecDSM2018"></a>Benjamin Holland. **Recent Trends in Program Analysis for Bug Hunting and Exploitation.** *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, September 2018.<br/>
 **Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Recent_Trends_in_Program_Analysis.pdf)]&nbsp;[[Video](https://www.youtube.com/watch?v=bL0oJsinqP0)]
