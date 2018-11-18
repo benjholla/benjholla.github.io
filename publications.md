@@ -8,19 +8,18 @@ permalink: /publications/
 This page contains selected talks, papers, and other publications.
 
 <a name="upcoming"></a>
-
-## Upcoming
-
-- <a name="PHDThesis"></a>Benjamin Holland. **Computing homomorphic program invariants.** *[Iowa State University](https://www.iastate.edu/)*, Ames, Iowa, November 2018.<br/>
-**PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
-<div class="abstract"><p>Program invariants are properties that are true at a particular program point or points. Program invariants are often undocumented assertions made by a programmer that hold the key to reasoning correctly about a software verification task. Unlike the contemporary research in which program invariants are defined to hold for all control flow paths, we propose <i>homomorphic program invariants</i> that hold only on the relevant subsets of paths that are defined with respect to a problem. For a problem-specific task, homomorphic program invariants can form stricter assertions that are arguably more useful to a specific analysis task.</p>
-<p>Towards our goal of computing homomorphic program invariants we deal with the challenge of the astronomical number of paths in programs. Since reasoning about a class of program paths must be efficient in order to scale to real world programs, we present a technique that implements prior work to efficiently divide program paths into equivalence classes with respect to control flow events of interest. We extend further extend prior work by handling inter-procedural paths, and then use the results to determine how to modify a program binary to abort execution at the start of an irrelevant program path. With off-the-shelf components, we employ the state-of-the-art in fuzzing and dynamic invariant detection tools to mine homomorphic program invariants.</p> 
-<p>To aid in the task of identifying likely software anomalies, we developed human-in-the-loop analysis methodologies and a toolbox of human-centric static analysis tools. We present work to perform a statically-informed dynamic analysis to efficiently transition from static analysis to dynamic analysis and leverage the strengths of each approach. To evaluate our approach, we apply our techniques to three case study audits of challenge applications from DARPA's Space/Time Analysis for Cybersecurity (STAC) program. In the final case study, we discover an unintentional vulnerability that causes a denial of service (DoS) in space and time, despite the challenge application having been hardened against static and dynamic analysis techniques.</p>
-</div>
+<!--## Upcoming-->
 
 <a name="2018"></a>
 
 ## 2018
+
+- <a name="PHDThesis"></a>Benjamin Holland. **Computing homomorphic program invariants.** *[Iowa State University](https://www.iastate.edu/)*, Ames, Iowa, November 2018.<br/>
+**PhD Thesis:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>Program invariants are properties that are true at a particular program point or points. Program invariants are often undocumented assertions made by a programmer that hold the key to reasoning correctly about a software verification task. Unlike the contemporary research in which program invariants are defined to hold for all control flow paths, we propose <i>homomorphic program invariants</i>, which hold with respect to a relevant equivalence class of control flow paths. For a problem-specific task, homomorphic program invariants can form stricter assertions. This work demonstrates that the novelty of computing homomorphic program invariants is both useful and practical.</p>
+<p>Towards our goal of computing homomorphic program invariants we deal with the challenge of the astronomical number of paths in programs. Since reasoning about a class of program paths must be efficient in order to scale to real world programs, we extend prior work to efficiently divide program paths into equivalence classes with respect to control flow events of interest. Our technique reasons about inter-procedural paths, which we then use to determine how to modify a program binary to abort execution at the start of an irrelevant program path. With off-the-shelf components, we employ the state-of-the-art in fuzzing and dynamic invariant detection tools to mine homomorphic program invariants. </p>
+<p>To aid in the task of identifying likely software anomalies, we develop human-in-the-loop analysis methodologies and a toolbox of human-centric static analysis tools. We present work to perform a statically-informed dynamic analysis to efficiently transition from static analysis to dynamic analysis and leverage the strengths of each approach. To evaluate our approach, we apply our techniques to three case study audits of challenge applications from DARPA's Space/Time Analysis for Cybersecurity (STAC) program. In the final case study, we discover an unintentional vulnerability that causes a denial of service (DoS) in space and time, despite the challenge application having been hardened against static and dynamic analysis techniques.</p>
+</div>
 
 - <a name="MILCOM2018"></a>Suresh Kothari, Benjamin Holland. **Systematic Exploration of Critical Software for Catastrophic Cyber-Physical Malware.** *[MILCOM 2018](http://events.afcea.org/milcom18/public/enter.aspx)*, Los Angeles, California, October 2018.<br/>
 **Tutorial:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](https://github.com/benjholla/MILCOM2018)]
