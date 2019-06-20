@@ -21,6 +21,10 @@ This page contains selected talks, papers, and other publications.
 <p><b>Going Beyond:</b> In this final module, we explore future directions in the field and examine some open problems in the context of what we learned in the previous modules.</p><p>It is the objective that by the end of this course participants should be able to: 1) Demonstrate basic bug hunting, exploitation, evasion, and post-exploitation skills, 2) Describe commonalities between vulnerability analysis and malware detection, 3) Describe fundamental limits in program analysis, 4) Challenge conventional viewpoints of security, 5) Confidently approach large third party software, 6) Critically evaluate software security products, and 7) Locate additional relevant resources.</p>
 </div>
 
+- <a name="ESEC-FSE2019"></a>Payas Awadhutkar, Ganesh Ram Santhanam, Benjamin Holland, Suresh Kothari. **DISCOVER: Detecting Algorithmic Complexity Vulnerabilities**, *[The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019)](https://esec-fse19.ut.ee)*, Tallinn, Estonia, August 2019.<br/>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
+<div class="abstract"><p>Algorithmic Complexity Vulnerabilities (ACV) are a class of vulnerabilities that enable Denial of Service attacks. ACVs stem from asymmetric consumption of resources due to complex loop termination logic, recursion, and/or resource intensive library APIs. Completely automated detection of ACVs is intractable and it calls for tools that assist human analysts.</p><p>We present DISCOVER, a suite of tools that facilitates human-on- the-loop detection of ACVs. DISCOVER's workflow can be broken into three phases - (1) Automated characterization of loops, (2) Selection of suspicious loops, and (3) Interactive audit of selected loops. We demonstrate DISCOVER using a case study using a DARPA challenge app. DISCOVER supports analysis of Java source code and Java bytecode. We demonstrate it for Java bytecode.</p>/div>
+
 <a name="2019"></a>
 
 ## 2019
