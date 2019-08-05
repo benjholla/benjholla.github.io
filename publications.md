@@ -10,6 +10,14 @@ This page contains selected talks, papers, and other publications.
 <a name="upcoming"></a>
 ## Upcoming
 
+- <a name="ESEC-FSE2019"></a>Payas Awadhutkar, Ganesh Ram Santhanam, Benjamin Holland, Suresh Kothari. **DISCOVER: Detecting Algorithmic Complexity Vulnerabilities**, *[The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019)](https://esec-fse19.ut.ee)*, Tallinn, Estonia, August 2019.<br/>
+**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[<a href="https://youtu.be/LtaOYxo7AWI">Video</a>]
+<div class="abstract"><p>Algorithmic Complexity Vulnerabilities (ACV) are a class of vulnerabilities that enable Denial of Service attacks. ACVs stem from asymmetric consumption of resources due to complex loop termination logic, recursion, and/or resource intensive library APIs. Completely automated detection of ACVs is intractable and it calls for tools that assist human analysts.</p><p>We present DISCOVER, a suite of tools that facilitates human-on- the-loop detection of ACVs. DISCOVER's workflow can be broken into three phases - (1) Automated characterization of loops, (2) Selection of suspicious loops, and (3) Interactive audit of selected loops. We demonstrate DISCOVER using a case study using a DARPA challenge app. DISCOVER supports analysis of Java source code and Java bytecode. We demonstrate it for Java bytecode.</p></div>
+
+<a name="2019"></a>
+
+## 2019
+
 - <a name="USCC2019"></a>Benjamin Holland. **Program Analysis for Cybersecurity III.** *US Cyber Challenge Summer Bootcamps [(USCC 2018)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, June-July 2019.<br/>
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
 <div class="abstract"><p>From bug hunting to exploit development to securing software systems, program analysis is a common thread that ties together multiple fields of software security. This training is targeted at individuals with little or no program analysis experience. Instead of simply learning how to break things, this training focuses on the challenges involved in securing software systems and developing a systematic approach to tackling ongoing software security challenges. The material is broken into 6 modules that cover both defensive and offensive aspects of security.</p>
@@ -20,14 +28,6 @@ This page contains selected talks, papers, and other publications.
 <p><b>Post Exploitation:</b> In this module we will develop a Managed Code Rootkit (MCR) and deploy the rootkit on the victim machine using our previous exploit against Minishare.</p>
 <p><b>Going Beyond:</b> In this final module, we explore future directions in the field and examine some open problems in the context of what we learned in the previous modules.</p><p>It is the objective that by the end of this course participants should be able to: 1) Demonstrate basic bug hunting, exploitation, evasion, and post-exploitation skills, 2) Describe commonalities between vulnerability analysis and malware detection, 3) Describe fundamental limits in program analysis, 4) Challenge conventional viewpoints of security, 5) Confidently approach large third party software, 6) Critically evaluate software security products, and 7) Locate additional relevant resources.</p>
 </div>
-
-- <a name="ESEC-FSE2019"></a>Payas Awadhutkar, Ganesh Ram Santhanam, Benjamin Holland, Suresh Kothari. **DISCOVER: Detecting Algorithmic Complexity Vulnerabilities**, *[The 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019)](https://esec-fse19.ut.ee)*, Tallinn, Estonia, August 2019.<br/>
-**Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[<a href="https://youtu.be/LtaOYxo7AWI">Video</a>]
-<div class="abstract"><p>Algorithmic Complexity Vulnerabilities (ACV) are a class of vulnerabilities that enable Denial of Service attacks. ACVs stem from asymmetric consumption of resources due to complex loop termination logic, recursion, and/or resource intensive library APIs. Completely automated detection of ACVs is intractable and it calls for tools that assist human analysts.</p><p>We present DISCOVER, a suite of tools that facilitates human-on- the-loop detection of ACVs. DISCOVER's workflow can be broken into three phases - (1) Automated characterization of loops, (2) Selection of suspicious loops, and (3) Interactive audit of selected loops. We demonstrate DISCOVER using a case study using a DARPA challenge app. DISCOVER supports analysis of Java source code and Java bytecode. We demonstrate it for Java bytecode.</p></div>
-
-<a name="2019"></a>
-
-## 2019
 
 - <a name="ICSE2019"></a>Derrick Lockwood, Benjamin Holland, Suresh Kothari. **Mockingbird: A Framework for Enabling Targeted Dynamic Analysis of Java Programs**, *[The 41st ACM/IEEE International Conference on Software Engineering (ICSE 2019)](https://2019.icse-conferences.org)*, Montreal, Canada, May 2019.<br/>
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Paper](../papers/Mockingbird.pdf)]&nbsp;[<a href="https://youtu.be/m9OUWtocWPE">Video</a>]
