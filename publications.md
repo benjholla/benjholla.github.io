@@ -11,7 +11,7 @@ This page contains selected talks, papers, and other publications.
 ## Upcoming
 
 - <a name="SecDSM2020"></a>Benjamin Holland. **Thinking on Uses of Dynamic Analysis for Software Security**, *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, April 2020.<br/>
-**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]]
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]
 <div class="abstract"><p>What is dynamic analysis and when should we use it? Dynamic analysis is one tool in a software security professional's toolkit that can drastically improve their effectiveness at analyzing buggy or even malicious software, but it is not a magic bullet. Knowing when and when not to apply dynamic analysis is important. This talk builds an understanding of dynamic analysis from basic principles then examines how dynamic analysis is applied in state-of-the-art tools such as AFL and the techniques that have stemmed from DARPA's Cyber Grand Challenge. Finally, we take a look towards the future at how humans and machines could work together by leveraging each other's strengths to perform a human-in-the-loop statically-informed dynamic analysis.</p></div>
 
 <a name="2019"></a>
