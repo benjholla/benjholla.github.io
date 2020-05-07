@@ -10,8 +10,16 @@ This page contains selected talks, papers, and other publications.
 <a name="upcoming"></a>
 ## Upcoming
 
+- <a name="USCC2020"></a>Benjamin Holland. **Program Analysis for Cybersecurity IV.** *US Cyber Challenge Summer Bootcamps [(USCC 2020)](https://www.uscyberchallenge.org/cyber-camps/)*, Three Regional Sessions Hosted Online, June-July 2020.<br/>
+**Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
+<div class="abstract"><p>Coming soon.</p></div>
+
+<a name="2020"></a>
+
+## 2020
+
 - <a name="SecDSM2020"></a>Benjamin Holland. **Thinking on Uses of Dynamic Analysis for Software Security**, *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, April 2020.<br/>
-**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Thinking_on_Uses_of_Dynamic_Analysis_for_Software_Security.pdf)]
+**Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Thinking_on_Uses_of_Dynamic_Analysis_for_Software_Security.pdf)]&nbsp;[[Video](https://youtu.be/oZsWkeUzBIw)]
 <div class="abstract"><p>What is dynamic analysis and when should we use it? Dynamic analysis is one tool in a software security professional's toolkit that can drastically improve their effectiveness at analyzing buggy or even malicious software, but it is not a magic bullet. Knowing when and when not to apply dynamic analysis is important. This talk builds an understanding of dynamic analysis from basic principles then examines how dynamic analysis is applied in state-of-the-art tools such as AFL and the techniques that have stemmed from DARPA's Cyber Grand Challenge. Finally, we take a look towards the future at how humans and machines could work together by leveraging each other's strengths to perform a human-in-the-loop statically-informed dynamic analysis.</p></div>
 
 <a name="2019"></a>
@@ -22,7 +30,7 @@ This page contains selected talks, papers, and other publications.
 **Paper:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[PDF](../papers/DISCOVER.pdf)]&nbsp;[<a href="https://youtu.be/LtaOYxo7AWI">Video</a>]
 <div class="abstract"><p>Algorithmic Complexity Vulnerabilities (ACV) are a class of vulnerabilities that enable Denial of Service attacks. ACVs stem from asymmetric consumption of resources due to complex loop termination logic, recursion, and/or resource intensive library APIs. Completely automated detection of ACVs is intractable and it calls for tools that assist human analysts.</p><p>We present DISCOVER, a suite of tools that facilitates human-on- the-loop detection of ACVs. DISCOVER's workflow can be broken into three phases - (1) Automated characterization of loops, (2) Selection of suspicious loops, and (3) Interactive audit of selected loops. We demonstrate DISCOVER using a case study using a DARPA challenge app. DISCOVER supports analysis of Java source code and Java bytecode. We demonstrate it for Java bytecode.</p></div>
 
-- <a name="USCC2019"></a>Benjamin Holland. **Program Analysis for Cybersecurity III.** *US Cyber Challenge Summer Bootcamps [(USCC 2018)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, June-July 2019.<br/>
+- <a name="USCC2019"></a>Benjamin Holland. **Program Analysis for Cybersecurity III.** *US Cyber Challenge Summer Bootcamps [(USCC 2019)](https://www.uscyberchallenge.org/cyber-camps/)*, Virginia, Illinois, Delaware, June-July 2019.<br/>
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac)]
 <div class="abstract"><p>From bug hunting to exploit development to securing software systems, program analysis is a common thread that ties together multiple fields of software security. This training is targeted at individuals with little or no program analysis experience. Instead of simply learning how to break things, this training focuses on the challenges involved in securing software systems and developing a systematic approach to tackling ongoing software security challenges. The material is broken into 6 modules that cover both defensive and offensive aspects of security.</p>
 <p><b>Exploit Development:</b> First we will become intimately familiar with one particular type of bug, a buffer overflow. We will iteratively develop exploits for a simple Linux program with a buffer overflow before we move on to developing an exploit for a Windows webserver called MiniShare.</p>
