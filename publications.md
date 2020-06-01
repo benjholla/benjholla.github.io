@@ -23,7 +23,7 @@ This page contains selected talks, papers, and other publications.
 <li>Lab 6: Fuzzing with <a href="https://lcamtuf.coredump.cx/afl/">AFL</a></li>
 <li>Lab 7: Symbolic execution with <a href="https://angr.io/">Angr</a></li>
 <li>Lab 8: Obfuscating <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2012-4681">CVE-2012-4681</a> and <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2013-0422">CVE-2013-0422</a> exploits to evade antivirus on <a href="https://www.virustotal.com/gui/home">VirusTotal</a></li>
-<li>Lab 9: Human-in-the-loop analysis of large Android applications (with and without source code)<li>
+<li>Lab 9: Human-in-the-loop analysis of large Android applications (with and without source code)</li>
 </ul>
 </div>
 
