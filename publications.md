@@ -14,7 +14,7 @@ This page contains selected talks, papers, and other publications.
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac2020)]
 <div class="abstract"><p>The course material is broken into several modules that cover both defensive and offensive materials.</p>
 <ul>
-<li>Lab 0: Turing machine to buffer overflow simulator</li>
+<li>Lab 0: Turing machine to buffer overflow simulators</li>
 <li>Lab 1: 32-bit buffer overflow</li>
 <li>Lab 2: 32-bit ROP buffer overflow</li>
 <li>Lab 3: 64-bit buffer overflow</li>
