@@ -7,8 +7,14 @@ permalink: /publications/
 
 This page contains selected talks, papers, and other publications.
 
+<!--
 <a name="upcoming"></a>
 ## Upcoming
+-->
+
+<a name="2020"></a>
+
+## 2020
 
 - <a name="USCC2020"></a>Benjamin Holland. **Program Analysis for Cybersecurity IV.** *US Cyber Challenge Summer Bootcamps [(USCC 2020)](https://www.uscyberchallenge.org/cyber-camps/)*, Three Regional Sessions Hosted Online, June-July 2020.<br/>
 **Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac2020)]
@@ -26,10 +32,6 @@ This page contains selected talks, papers, and other publications.
 <li>Lab 9: Human-in-the-loop analysis of large Android applications (with and without source code)</li>
 </ul>
 </div>
-
-<a name="2020"></a>
-
-## 2020
 
 - <a name="SecDSM2020"></a>Benjamin Holland. **Thinking on Uses of Dynamic Analysis for Software Security**, *[SecDSM](https://secdsm.org)*, Des Moines, Iowa, April 2020.<br/>
 **Talk:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Slides](/slides/Thinking_on_Uses_of_Dynamic_Analysis_for_Software_Security.pdf)]&nbsp;[[Video](https://youtu.be/oZsWkeUzBIw)]
