@@ -7,10 +7,29 @@ permalink: /publications/
 
 This page contains selected talks, papers, and other publications.
 
-<!--
 <a name="upcoming"></a>
 ## Upcoming
--->
+
+<!--<a name="2021"></a>-->
+
+## 2020
+
+- <a name="USCC2021"></a>Benjamin Holland. **Program Analysis for Cybersecurity V.** *US Cyber Challenge Summer Bootcamps [(USCC 2021)](https://www.uscyberchallenge.org/cyber-camps/)*, 2nd Regional Session Hosted Online, June 2021.<br/>
+**Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac2020)]
+<div class="abstract"><p>The course material is broken into several modules that cover both defensive and offensive materials.</p>
+<ul>
+<li>Lab 0: Turing machine to buffer overflow simulators</li>
+<li>Lab 1: 32-bit buffer overflow</li>
+<li>Lab 2: 32-bit ret2lib buffer overflow</li>
+<li>Lab 3: 64-bit buffer overflow</li>
+<li>Lab 4: Development of remote exploit for Windows web server <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a></li>
+<li>Lab 5: Source code static analysis of <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a> with <a href="https://www.ensoftcorp.com/atlas/">Atlas</a></li>
+<li>Lab 6: Fuzzing with <a href="https://lcamtuf.coredump.cx/afl/">AFL</a></li>
+<li>Lab 7: Symbolic execution with <a href="https://angr.io/">Angr</a></li>
+<li>Lab 8: Obfuscating <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2012-4681">CVE-2012-4681</a> and <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2013-0422">CVE-2013-0422</a> exploits to evade antivirus on <a href="https://www.virustotal.com/gui/home">VirusTotal</a></li>
+<li>Lab 9: Human-in-the-loop analysis of large Android applications (with and without source code)</li>
+</ul>
+</div>
 
 <a name="2020"></a>
 
@@ -22,7 +41,7 @@ This page contains selected talks, papers, and other publications.
 <ul>
 <li>Lab 0: Turing machine to buffer overflow simulators</li>
 <li>Lab 1: 32-bit buffer overflow</li>
-<li>Lab 2: 32-bit ROP buffer overflow</li>
+<li>Lab 2: ret2lib-bit ROP buffer overflow</li>
 <li>Lab 3: 64-bit buffer overflow</li>
 <li>Lab 4: Development of remote exploit for Windows web server <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a></li>
 <li>Lab 5: Source code static analysis of <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a> with <a href="https://www.ensoftcorp.com/atlas/">Atlas</a></li>
