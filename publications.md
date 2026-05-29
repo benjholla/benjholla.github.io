@@ -10,6 +10,29 @@ This page contains selected talks, papers, and other publications.
 <!--<a name="upcoming"></a>-->
 <!--## Upcoming-->
 
+## 2026
+
+<a name="2026"></a>
+
+- <a name="USCC2026"></a>Benjamin Holland. **Program Analysis for Cybersecurity IX.** *US Cyber Challenge Summer Bootcamps [(USCC 2024)](https://www.uscyberchallenge.org/cyber-camps/)*, Two Regional Sessions Hosted Online, June-July 2026.<br/>
+**Training:**&nbsp;[<a href="#" class="toggle-abstract">Abstract</a>]&nbsp;[[Materials](/pac2020)]
+<div class="abstract"><p>The course material is broken into several modules that cover both defensive and offensive materials.</p>
+<ul>
+<li>Lab 0: Turing machine to buffer overflow simulators</li>
+<li>Lab 1: 32-bit buffer overflow</li>
+<li>Lab 2: 32-bit ret2lib buffer overflow</li>
+<li>Lab 3: 64-bit buffer overflow</li>
+<li>Lab 4: Development of remote exploit for Windows web server <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a></li>
+<li>Lab 5: Source code static analysis of <a href="https://www.cvedetails.com/cve/CVE-2004-2271/">CVE-2004-2271</a> with <a href="https://www.ensoftcorp.com/atlas/">Atlas</a></li>
+<li>Lab 6: Fuzzing with <a href="https://lcamtuf.coredump.cx/afl/">AFL</a></li>
+<li>Lab 7: Symbolic execution with <a href="https://angr.io/">Angr</a></li>
+<li>Lab 8: Obfuscating <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2012-4681">CVE-2012-4681</a> and <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2013-0422">CVE-2013-0422</a> exploits to evade antivirus on <a href="https://www.virustotal.com/gui/home">VirusTotal</a></li>
+<li>Lab 9: Human-in-the-loop analysis of large Android applications (with and without source code)</li>
+<li>Lab 10: Summoning Cthulhu - Writing strange programs for weird machines</li>
+<li>Lab 11: Building Skynet - Do some vibe coding and critically play with AI</li>
+</ul>
+</div>
+
 ## 2025
 
 <a name="2025"></a>
