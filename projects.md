@@ -19,7 +19,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 - [AtlasWBP](https://ben-holland.com/AtlasWBP/) - An Atlas frontend for processing Java WAR binaries.
 - [Toolbox Commons](https://ensoftcorp.github.io/toolbox-commons/) - A set of common utilities for program analysis using Atlas.
 - [Starter Toolbox](https://github.com/EnSoftCorp/Starter-Toolbox) - A barebone starter toolbox for building a domain specific toolbox on top of Atlas. This plugin supports a headless bulk analysis mode.
-- [Software Metrics](https://github.com/benjholla/SoftwareMetricsAssignment) - A program analysis assignment to calcuate software architecture metrics for afferent and efferent coupling.
+- [Software Metrics](https://github.com/benjholla/SoftwareMetricsAssignment) - A program analysis assignment to calculate software architecture metrics for afferent and efferent coupling.
 - [Android Essentials Toolbox](https://ensoftcorp.github.io/android-essentials-toolbox/) - A set of building blocks for analyzing Android apps with Atlas. This plugin implements a mapping of Android permissions to their corresponding API methods for multiple versions of Android.
 - [SIDIS Toolbox](https://github.com/kcsl/sidis-toolbox) - A successor to [Statically-informed Dynamic (SID) Analysis](https://ensoftcorp.github.io/SID/) for hybrid static and dynamic analysis enabling Statically-informed Dynamic (SID) analysis and Dynamically-informed Static  (DIS) analysis.
 - [Projected Control Graph (PCG) Toolbox](https://ensoftcorp.github.io/pcg-toolbox/) - A toolbox for transforming Control Flow Graphs into compact Projected Control Graphs with respect to a set of control flow events.
@@ -52,7 +52,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 	</td>
 	<td>
 		<a href="https://youtu.be/6WBGLD_DBsw">
-    		<img style="max-width:300px" src="/images/projects/zombie_strategies/screenshot-ios.png" alt="Zobmie Strategies iOS App"/>
+		<img style="max-width:300px" src="/images/projects/zombie_strategies/screenshot-ios.png" alt="Zombie Strategies iOS App"/>
     	</a>
 	</td>
   </tr>
@@ -63,7 +63,7 @@ I've written a few plugins for [Atlas](http://www.ensoftcorp.com/atlas/) (a prog
 
 I've developed several vulnerable web applications and challenge anomalies for use in cyber defense competitions at Iowa State University.  For more details see [https://github.com/ISEAGE-ISU](https://github.com/ISEAGE-ISU).
 
-<center>
+<div style="text-align: center;">
 
 <div style="float:left; margin-left:5px; margin-right:5px; margin-bottom:10px;">
 <table>
@@ -79,7 +79,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
     </td>
   </tr>
   <tr>
-    <td><center><a href="https://github.com/benjholla/CompletelyDigitalClips">Web Application Source</a><br /><a href="https://github.com/benjholla/CompletelyDigitalClips/tree/master/anomalies">Competition Anomalies</a></center></td>
+    <td><div style="text-align: center;"><a href="https://github.com/benjholla/CompletelyDigitalClips">Web Application Source</a><br /><a href="https://github.com/benjholla/CompletelyDigitalClips/tree/master/anomalies">Competition Anomalies</a></div></td>
   </tr>
 </table>
 </div>
@@ -100,7 +100,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
     </td>
   </tr>
   <tr>
-    <td><center><a href="https://github.com/benjholla/NCDC2014">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Spring_2014_NCDC_Anomalies">Competition Anomalies</a></center></td>
+    <td><div style="text-align: center;"><a href="https://github.com/benjholla/NCDC2014">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Spring_2014_NCDC_Anomalies">Competition Anomalies</a></div></td>
   </tr>
 </table>
 </div>
@@ -122,7 +122,7 @@ I've developed several vulnerable web applications and challenge anomalies for u
 	</td>
   </tr>
   <tr>
-    <td><center><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a><br /><a href="https://www.youtube.com/watch?v=YHz0pKAQo64">Promotional Video</a></center></td>
+    <td><div style="text-align: center;"><a href="https://github.com/benjholla/Blackbook">Web Application Source</a><br /><a href="https://github.com/benjholla/ISU_Fall_2013_CDC_Anomalies">Competition Anomalies</a><br /><a href="https://www.youtube.com/watch?v=YHz0pKAQo64">Promotional Video</a></div></td>
   </tr>
 </table>
 </div>
@@ -140,9 +140,9 @@ I've developed several vulnerable web applications and challenge anomalies for u
 	</td>
   </tr>
   <tr>
-    <td><center>&nbsp;<br /><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br /></center></td>
+    <td><div style="text-align: center;">&nbsp;<br /><a href="https://github.com/benjholla/BadTwitterClone">Web Application Source</a><br />&nbsp;<br /></div></td>
   </tr>
 </table>
 </div>
 
-</center>
+</div>
